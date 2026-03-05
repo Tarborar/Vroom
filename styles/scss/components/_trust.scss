@@ -1,0 +1,19 @@
+.trust__number{
+    font-size: 60px;
+    color: $primary-color;
+    font-weight: $bold;
+}
+
+.trust__titleNumber{
+    font-size: 36px;
+    color: $primary-color;
+    font-weight: $bold;
+}
+
+.trustContainer >*{
+    max-width: 400px;
+}
+
+.trust__paragraph{
+    margin-top: 50px;
+}

@@ -1,0 +1,49 @@
+footer{
+    background-color: $primary-color;
+    padding: calc($gap*2);
+}
+
+.footerContainer>*{
+    flex: 1;
+}
+
+.footer__titleNavigation{
+    color: white;
+    font-size: 21px;
+    font-weight: $bold;
+}
+
+.footer__navigationContainer{
+    color: white;
+    gap: 10px;
+}
+
+.footer__navigationContainer>li>a{
+    color: white;
+}
+
+.footer__newsletterParagraph{
+    color: white;
+}
+
+//répété du newsletter, à globaliser
+.footer__inputText{
+    height: 55px;
+    border-radius: 100px;
+    padding: 0 25px;
+    width: 100%;
+    border: none;
+}
+
+.footer__buttonInputText{
+    position: absolute;
+    right: 0;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border: solid 1px #BFBFBF;
+    border-radius: 100px;
+    right: 0;
+    top: -2.5px;
+}
+

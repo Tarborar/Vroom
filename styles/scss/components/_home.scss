@@ -1,0 +1,45 @@
+.homeContainer{
+    gap: 200px;
+}
+
+header{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.header__logo{
+    height: 21px;
+}
+
+.header__navigation{
+    font-size: 21px;
+    font-weight: $regular;
+    gap: $gap;
+}
+
+.home__elements{
+    gap: $gap;
+}
+
+.home__elements> *{
+    flex: 1;
+}
+
+.home__info{
+    gap: $gap;
+}
+
+.home__buttonPlay{
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    border-radius: 100px;
+    border: solid 1px $primary-color;
+    background-color: white;
+}
+
+.home__image{
+    width: 100%;
+    height: auto;
+}

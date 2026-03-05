@@ -1,0 +1,48 @@
+.newsletterContainer{
+    background-color: $light-color;
+    width: 100%;
+    padding: 100px;
+    justify-content: center;
+    border-radius: $gap;
+    position: relative;
+    gap: calc($gap*4);
+    margin-bottom: calc($gap*2);
+}
+
+.newsletter__infoContainer{
+    flex: 3;
+}
+
+.newsletter__formContainer{
+    flex: 2;
+}
+
+.newsletter__inputText{
+    height: 55px;
+    border-radius: 100px;
+    border: solid 1px #BFBFBF;
+    padding: 0 25px;
+    width: 100%;
+}
+
+.newsletter__buttonInputText{
+    position: absolute;
+    right: 0;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border: solid 1px #BFBFBF;
+    border-radius: 100px;
+    right: 0;
+    top: -2.5px;
+}
+
+.newsletter__button{
+    width: auto !important;
+}
+
+.newsletter__dessin{
+    position: absolute;
+    bottom: -100px;
+    right: 20%;
+}

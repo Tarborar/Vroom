@@ -1,0 +1,34 @@
+.magContainer{
+    width: 100%;
+}
+
+.mag__header{
+    justify-content: space-between;
+}
+
+.mag__buttonContainer{
+    position: relative;
+}
+
+.mag__button{
+    height: 55px;
+    padding: 0 75px 0 25px;
+    border-radius: 100px;
+    background-color: $primary-color;
+    color: white;
+    font-size: 18px;
+    font-weight: $light;
+    width: fit-content;
+}
+
+.mag__buttonIcon{
+    right: 0;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border: solid 1px $primary-color;
+    border-radius: 100px;
+    position: absolute;
+    right: 0;
+    top: -2.5px;
+}

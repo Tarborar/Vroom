@@ -1,0 +1,33 @@
+.mobile__infoButton{
+    height: 55px;
+    text-align: center;
+    padding: 0 50px;
+    border-radius: 100px;
+    background-color: $light-color;
+    color: $paragraph-color;
+    font-size: 21px;
+    font-weight: $bold;
+}
+
+.mobile__card{
+    border: solid 2px $primary-color;
+    padding: $gap;
+    border-radius: $gap;
+    background-color: $light-color;
+    flex: 1;
+}
+
+.mobile__logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile__logoContainer{
+    display: flex;
+    align-items: end;
+}
+
+.mobile__logoImage{
+    width: 60px;
+    height: auto;
+}

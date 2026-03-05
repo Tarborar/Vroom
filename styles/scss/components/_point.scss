@@ -1,0 +1,21 @@
+.pointContainer{
+    background-color: $primary-color;
+    border-radius: 50px;
+    width: 100%;
+    padding: 50px 100px;
+    justify-content: center;
+}
+
+.point__title{
+    color: white;
+}
+
+.point__paragraph{
+    color: #7FC4EA;
+    font-size: 18px;
+    font-weight: $light;
+}
+
+.point__buttonInputText{
+    border: solid 1px white;
+}

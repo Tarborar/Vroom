@@ -1,0 +1,38 @@
+.bannerBackground{
+    margin-top: $gap;
+    position: relative;
+    background-color: $primary-color;
+    width: 100%;
+    height: 300px;
+    //Récupérer hauteur de .bannerContainer en js
+    padding: 5px;
+}
+
+.bannerContainer{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+    width: calc(80%*0.8);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    border-radius: 50px;
+    padding: calc($gap*2);
+    gap: $gap;
+}
+
+.bannerContainer >*{
+    flex: 1;
+}
+
+.bannerElement{
+    display: flex;
+}
+
+@media (max-width: 1440px) {
+    .bannerElement {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}

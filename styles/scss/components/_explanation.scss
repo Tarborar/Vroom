@@ -1,0 +1,40 @@
+.explanation__image{
+    width: 100%;
+    height: auto;
+}
+
+.explanation__covoiturage{
+    position: relative;
+}
+
+.explanation__trustContainer{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    background-color: $primary-color;
+    color: white;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+.explanation__trustNumber{
+    font-size: 60px;
+    font-weight: $bold;
+}
+
+.explanation__trustParagraph{
+    font-size: 18px;
+    font-weight: $light;
+}
+
+.explanation__iconContainer{
+    position: relative;
+}
+
+.explanation__icon{
+    position: absolute;
+    left: 50%;   
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
