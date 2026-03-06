@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/css/main.css">
 </head>
 <body>
-    <div class="main vertical gap">
+    <div class="main vertical bigGap">
         <!--#################### -- HOME -- ####################-->
         <div class="homeContainer sectionContainer vertical">
             <header class="horizontal header">
@@ -47,11 +47,10 @@
                     <img src="./assets/Voiture.png" class="home__image" alt="Voiture">
                 </div>
             </div>
-            
         </div>
         <!--#################### -- BANNER -- ####################-->
         <div class="bannerBackground">
-            <div class="bannerContainer sectionContainer horizontal">
+            <div class="bannerContainer horizontal">
                 <div class="smallGap bannerElement">
                     <i class="fa-solid fa-earth-americas"></i>
                     <div class="vertical paragraphGap">
@@ -67,7 +66,7 @@
                     </div>
                 </div>
                 <div class="smallGap bannerElement">
-                    <i class="fa-solid fa-shield"></i>
+                    <i class="fa-solid fa-check"></i>
                     <div class="vertical paragraphGap">
                         <h3 class="h3__title">En toute confiance</h3>
                         <p class="paragraph">Profils vérifiés et avis certifiés par nos équipes</p>
@@ -78,18 +77,18 @@
         <!--#################### -- EXPLANATION -- ####################-->
         <div class="explanationContainer sectionContainer horizontal gap">
             <div class="explanation__covoiturage">
-                <div>
-                    <img src="./assets/Covoiturage.png" alt="Rencontre covoiturage">
-                </div>
-                <div class="explanation__trustContainer center vertical">
-                    <p class="explanation__trustNumber">5k</p>
-                    <p class="explanation__trustParagraph">voyageurs heureux</p>
+                <div class="explanation__imageContainer">
+                    <img src="./assets/Covoiturage.png"  class="explanation__image" alt="Rencontre covoiturage">
+                    <div class="explanation__trustContainer vertical">
+                        <p class="explanation__trustNumber">5k</p>
+                        <p class="explanation__trustParagraph">voyageurs heureux</p>
+                    </div>
                 </div>
             </div>
             <div class="vertical gap">
                 <h2 class="h2__title">Vroom <strong>simplifie</strong> vos déplacements quotidiens</h2>
                 <div class="vertical gap">
-                    <div class="horizontal smallGap">
+                    <div class="horizontal smallGap explanation__infoContainer">
                         <div class="explanation__iconContainer">
                             <img src="./assets/icon_background.png" alt="">
                             <i class="fa-solid fa-user explanation__icon center"></i>
@@ -99,7 +98,7 @@
                             <p class="paragraph">Recherchez parmi des milliers de trajets disponibles chaque jour en France</p>
                         </div>
                     </div>
-                    <div class="horizontal smallGap">
+                    <div class="horizontal smallGap explanation__infoContainer">
                         <div class="explanation__iconContainer">
                             <img src="./assets/icon_background.png" alt="">
                             <i class="fa-solid fa-arrow-pointer explanation__icon center"></i>
@@ -109,7 +108,7 @@
                             <p class="paragraph">Paiement sécurisé et confirmation immédiate pour voyager l'esprit tranquille</p>
                         </div>
                     </div>
-                    <div class="horizontal smallGap">
+                    <div class="horizontal smallGap explanation__infoContainer">
                         <div class="explanation__iconContainer">
                             <img src="./assets/icon_background.png" alt="">
                             <i class="fa-solid fa-award explanation__icon center"></i>
@@ -170,14 +169,14 @@
                         </button>
                     </div>
                 </div>
-                <div class="point__imageContainer">
-                    <img src="./assets/Points.png" alt="Carte Point">
+                <div class="point__imageContainer center">
+                    <img src="./assets/Points.png" class="point__image" alt="Carte Point">
                 </div>
             </div>
         </div>
         <!--#################### -- MOBILE -- ####################-->
         <div class="mobileContainer sectionContainer horizontal gap">
-            <div class="vertical gap">
+            <div class="vertical gap mobile__infoContainer">
                 <h2 class="h2__title">L'expérience Vroom <strong>mobile</strong></h2>
                 <button class="mobile__infoButton">Ouvrir l'application</button>
                 <div class="horizontal smallGap">
@@ -188,7 +187,7 @@
                     </div>
                 </div>
             </div>
-            <div class="horizontal smallGap">
+            <div class="smallGap mobile__cardContainer">
                 <div class="vertical mobile__card smallGap">
                     <h4 class="h4__title">Pour IOS</h4>
                     <p class="paragraph">Téléchargez Vroom sur l'App Store et commencez à voyager</p>
@@ -201,7 +200,7 @@
                     </div>
                 </div>
                 <div class="vertical mobile__card smallGap">
-                    <h4 class="h4__title">Pour Android</h4>
+                    <h4 class="h4__title test">Pour Android</h4>
                     <p class="paragraph">Disponible sur Google Play, installez l'application Vroom</p>
                     <button class="button">Téléchargez</button>
                     <div class="horizontal mobile__logo">
@@ -276,10 +275,51 @@
             <img src="./assets/dessin.png" class="dessin__image" alt="Dessin Trajet">
         </div>
         <!--#################### -- FAQ -- ####################-->
-        <div class="faqContainer sectionContainer">
+        <div class="sectionContainer vertical bigGap">
             <h2 class="h2__title">Toutes les <strong>réponses</strong> à vos questions juste ici !</h2>
-            <div id="faq">
-                <!-- faq -->
+            <div class="faqContainer vertical smallGap">
+                <div>
+                    <div class="horizontal faq__questionContainer">
+                        <p class="faq__question">Comment créer un compte Vroom ?</p>
+                        <button class="faq__button">+</button>
+                    </div>
+                    <p class="faq__answer"></p>
+                </div>
+                <div>
+                    <div class="horizontal faq__questionContainer">
+                        <p class="faq__question">Comment fonctionnent les points ?</p>
+                        <button class="faq__button">+</button>
+                    </div>
+                    <p class="faq__answer"></p>
+                </div>
+                <div>
+                    <div class="horizontal faq__questionContainer">
+                        <p class="faq__question">Puis-je annuler une réservation ?</p>
+                        <button class="faq__button">+</button>
+                    </div>
+                    <p class="faq__answer"></p>
+                </div>
+                <div>
+                    <div class="horizontal faq__questionContainer">
+                        <p class="faq__question">Quelle est la politique des bagages ?</p>
+                        <button class="faq__button">+</button>
+                    </div>
+                    <p class="faq__answer"></p>
+                </div>
+                <div>
+                    <div class="horizontal faq__questionContainer">
+                        <p class="faq__question">Le site est-il sécurisé ?</p>
+                        <button class="faq__button">+</button>
+                    </div>
+                    <p class="faq__answer"></p>
+                </div>
+                <div>
+                    <div class="horizontal faq__questionContainer">
+                        <p class="faq__question">Puis-je amener mes animaux de compagnie ?</p>
+                        <button class="faq__button">+</button>
+                    </div>
+                    <p class="faq__answer"></p>
+                </div>
             </div>
         </div>
         <!--#################### -- FOOTER -- ####################-->

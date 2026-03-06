@@ -17,6 +17,7 @@
 @import 'components/mag';
 @import 'components/newsletter';
 @import 'components/dessin';
+@import 'components/faq';
 
 // Pages
 @import 'pages/connection';
@@ -33,16 +34,27 @@ body{
     padding-right: 25px;
 }
 
+//Alignement
 .horizontal{
     display: flex;
     flex-direction: row;
 }
-
 .vertical{
     display: flex;
     flex-direction: column;
 }
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.inputContainer{
+    position: relative;
+}
 
+//Element
 .button{
     height: 55px;
     text-align: center;
@@ -54,11 +66,6 @@ body{
     font-weight: $medium;
     width: fit-content;
 }
-
-.inputContainer{
-    position: relative;
-}
-
 .inputText{
     height: 55px;
     border-radius: 100px;
@@ -66,7 +73,6 @@ body{
     padding: 0 25px;
     width: 100%;
 }
-
 .button__inputText{
     right: 0;
     height: 60px;
@@ -78,49 +84,40 @@ body{
     top: -2.5px;
 }
 
-strong{
-    color: $primary-color;
-}
-
+//Text
 .h1__title, .h2__title{
     font-size: 60px;
     font-weight: $extra-bold;
 }
-
 .h3__title{
     font-size: 21px;
     color: $primary-color;
     font-weight: $bold;
 }
-
 .h4__title{
     font-size: 36px;
     font-weight: $bold;
 }
-
 .paragraph{
     font-size: 18px;
     color: $paragraph-color;
     font-weight: $light;
 }
+strong{
+    color: $primary-color;
+}
 
+//Gap
+.bigGap{
+    gap: calc($gap*2);
+}
 .gap{
     gap: $gap;
 }
-
 .smallGap{
     gap: calc($gap/2);
 }
-
 .paragraphGap{
     gap: 5px;
-}
-
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
 }
 

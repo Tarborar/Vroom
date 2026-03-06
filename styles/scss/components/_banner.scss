@@ -1,5 +1,4 @@
 .bannerBackground{
-    margin-top: $gap;
     position: relative;
     background-color: $primary-color;
     width: 100%;
@@ -9,30 +8,31 @@
 }
 
 .bannerContainer{
+    //Permet l'overlap sur le background bleu
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: -50px;
+    
+    //positionnement
+    // padding: calc($gap*2);
+    justify-content: space-between;
+    gap: $gap;
     width: calc(80%*0.8);
+
+    //styles
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: white;
     border-radius: 50px;
-    padding: calc($gap*2);
-    gap: $gap;
 }
 
-.bannerContainer >*{
-    flex: 1;
-}
-
-.bannerElement{
-    display: flex;
-}
-
-@media (max-width: 1440px) {
-    .bannerElement {
+.bannerElement {
         display: flex;
         flex-direction: column;
         text-align: center;
+        flex: 1;
     }
-}
+
+    .bannerContainer{
+        padding: $gap;
+    }

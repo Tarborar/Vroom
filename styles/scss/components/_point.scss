@@ -19,3 +19,18 @@
 .point__buttonInputText{
     border: solid 1px white;
 }
+
+.point__infoContainer{
+    flex: 2;
+}
+
+.point__image{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1440px){
+    .pointContainer{
+        padding: 50px 50px;
+    }
+}

@@ -1,3 +1,13 @@
+.mobile__infoContainer{
+    flex: 1;
+}
+
+.mobile__cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+}
+
 .mobile__infoButton{
     height: 55px;
     text-align: center;
@@ -30,4 +40,8 @@
 .mobile__logoImage{
     width: 60px;
     height: auto;
+}
+
+.test{
+    text-wrap: nowrap;
 }

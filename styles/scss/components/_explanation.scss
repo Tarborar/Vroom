@@ -1,31 +1,58 @@
+.explanation__imageContainer{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    line-height: 0;
+}
+
 .explanation__image{
     width: 100%;
     height: auto;
 }
 
 .explanation__covoiturage{
-    position: relative;
+    display: flex;
+    align-items: center;
+    
 }
 
 .explanation__trustContainer{
+    //position
     position: absolute;
     top: 0;
-    left: 50px;
+    left: 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    //size
+    width: 40%;
+    aspect-ratio: 1/1;
+    
+    //styles
     background-color: $primary-color;
+    border-radius: 50%;
     color: white;
-    height: 200px;
-    width: 200px;
-    border-radius: 100px;
 }
 
 .explanation__trustNumber{
-    font-size: 60px;
+    font-size: 3vw;
     font-weight: $bold;
+    margin: 25px;
 }
 
 .explanation__trustParagraph{
-    font-size: 18px;
+    font-size: clamp(10px, 16px, 1vw);
     font-weight: $light;
+
+    //Texte ne s'écrase pas 
+    line-height: 2;
+    margin: 0;
+}
+
+.explanation__infoContainer{
+    align-items: center;
 }
 
 .explanation__iconContainer{
@@ -38,3 +65,9 @@
     top: 50%;
     transform: translate(-50%,-50%);
 }
+
+// @media screen and (max-width: 1024px){
+//     .explanation__trustContainer{
+//         visibility: hidden;
+//     }
+// }
