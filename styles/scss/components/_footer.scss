@@ -3,8 +3,16 @@ footer{
     padding: calc($gap*2);
 }
 
+.footerContainer{
+    padding: 0px !important;
+}
+
 .footerContainer>*{
     flex: 1;
+}
+
+.test{
+    flex: 2 !important;
 }
 
 .footer__titleNavigation{
@@ -47,3 +55,13 @@ footer{
     top: -2.5px;
 }
 
+@media screen and (max-width: 1440px){
+    .newsletterContainer{
+        gap: calc($gap*2);
+        padding: 50px;
+    }
+
+    footer{
+        padding: $gap;
+    }
+}

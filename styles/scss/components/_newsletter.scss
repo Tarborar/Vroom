@@ -46,3 +46,17 @@
     bottom: -100px;
     right: 20%;
 }
+
+@media screen and (max-width: 1440px){
+    .newsletterContainer{
+        gap: calc($gap*2);
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 1240px){
+    .newsletter__dessin{
+        bottom: -100px;
+        right: 0%;
+    }
+}

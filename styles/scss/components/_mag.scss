@@ -32,3 +32,40 @@
     right: 0;
     top: -2.5px;
 }
+
+.mag__blogContainer>*{
+    flex: 1;
+}
+
+.mag__blogElement{
+    gap: calc($gap/4);
+}
+
+.mag__image{
+    width: 100%;
+    height: auto;
+    border-radius: 33px;
+}
+
+.mag__tagContainer>li{
+    background-color: $primary-color;
+    color: white;
+    font-size: 18px;
+    font-weight: $regular;
+    padding: 5px 25px;
+    border-radius: 100px;
+}
+
+.mag__blogTitle{
+    font-size: 21px;
+    font-weight: $bold;
+}
+
+.mag__blogMore{
+    font-size: 18px;
+    font-weight: $light;
+    text-decoration: underline;
+}
+
+
+
