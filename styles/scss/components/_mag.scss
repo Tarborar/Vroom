@@ -29,7 +29,6 @@
     border: solid 1px $primary-color;
     border-radius: 100px;
     position: absolute;
-    right: 0;
     top: -2.5px;
 }
 
@@ -67,5 +66,39 @@
     text-decoration: underline;
 }
 
+@media screen and (max-width: 1024px){
+    .mag__image{
+        border-radius: 18px;
+    }
 
+    .mag__infoElement{
+        justify-content: center;
+    }
+
+    .mag__tagContainer{
+        gap: 10px !important;
+    }
+
+    .mag__buttonContainer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .mag__button{
+        width: 80%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .mag__blogElement>*{
+        flex: 1;
+    }
+
+    .mag__buttonIcon{
+        right: 10%;
+    }
+}
 

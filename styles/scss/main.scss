@@ -23,8 +23,15 @@
 @import 'pages/connection';
 @import 'pages/error';
 
+html{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 body{
+    max-width: 100%;
     font-family: "Nunito Sans";
+    overflow-x: hidden;
 }
 
 .sectionContainer{
@@ -88,6 +95,11 @@ body{
 .h1__title, .h2__title{
     font-size: 60px;
     font-weight: $extra-bold;
+    text-wrap: balance;
+
+    @media screen and (max-width: 1024px){
+        text-align: center;
+    }
 }
 .h3__title{
     font-size: 21px;

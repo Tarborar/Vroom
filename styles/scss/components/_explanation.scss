@@ -66,8 +66,42 @@
     transform: translate(-50%,-50%);
 }
 
-// @media screen and (max-width: 1024px){
-//     .explanation__trustContainer{
-//         visibility: hidden;
-//     }
-// }
+@media screen and (max-width: 1024px){
+    .explanation__image{
+        width: 50%;
+    }
+
+    .explanation__imageContainer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .explanation__trustContainer{
+        left: 30%; 
+        width: 20%;
+    }
+
+    .explanation__trustNumber{
+        font-size: 60px;
+    }
+
+    .explanation__trustParagraph{
+        font-size: 12px;
+    }
+
+    .explanation__infoContainer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .explanation__elementContainer{
+        max-width: 80%;
+    }
+
+    .explanation__icon{
+        position: absolute;
+        left: 50%;   
+        top: 40%;
+        transform: translate(-50%,-50%);
+    }
+}

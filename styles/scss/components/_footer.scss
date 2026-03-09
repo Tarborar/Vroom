@@ -5,6 +5,8 @@ footer{
 
 .footerContainer{
     padding: 0px !important;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .footerContainer>*{
@@ -56,12 +58,34 @@ footer{
 }
 
 @media screen and (max-width: 1440px){
-    .newsletterContainer{
+    .footerContainer{
         gap: calc($gap*2);
         padding: 50px;
     }
 
     footer{
         padding: $gap;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    footer{
+        
+        flex-direction: column !important;
+    }
+
+    .footer__logoContainer{
+        flex: 1;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .footerContainer{
+        flex: 3;
+    }
+
+    .footer__logo{
+        width: 100%;
+        height: auto;
     }
 }

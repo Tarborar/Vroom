@@ -19,6 +19,7 @@ header{
 }
 
 .home__elements{
+    display: flex;
     gap: $gap;
     align-items: center;
 }
@@ -48,5 +49,24 @@ header{
 @media screen and (max-width: 1440px){
     .homeContainer{
         gap: 100px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .homeContainer{
+        text-align: center;
+    }
+
+    .home__elements{
+        flex-direction: column;
+    }
+
+    .home__buttonInfoContainer{
+        justify-content: center;
+    }
+
+    .home__image{
+        width: 50%;
+        height: auto;
     }
 }

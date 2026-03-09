@@ -13,8 +13,16 @@
 .faq__button{
     width: 60px;
     height: 60px;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     font-size: 21px;
     font-weight: $bold;
     color: $primary-color;
+}
+
+@media screen and (max-width: 1024px){
+    .faq__questionContainer{
+        padding: 25px 25px;
+        text-wrap: balance;
+    }
 }

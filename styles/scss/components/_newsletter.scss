@@ -60,3 +60,18 @@
         right: 0%;
     }
 }
+
+@media screen and (max-width: 1024px){
+    .newsletterContainer{
+        gap: $gap;
+        padding: 50px 25px;
+    }
+
+    .newsletter__formContainer{
+        width: 100%;
+
+        //Padding 50px sauf pour le title 2 lignes
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+}

@@ -34,3 +34,18 @@
         padding: 50px 50px;
     }
 }
+
+@media screen and (max-width: 1024px){
+    .pointContainer{
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .point__image{
+        width: 75%;
+    }
+
+    .point__paragraph{
+        text-align: center;
+    }
+}

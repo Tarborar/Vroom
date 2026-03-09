@@ -21,3 +21,41 @@
 .trust__paragraph{
     margin-top: 25px;
 }
+
+@media screen and (max-width: 1024px){
+    .trustContainer >*{
+        flex: 1;
+        max-width: 80%;
+    }
+
+    .trustContainer{
+        display: flex;
+        flex-direction: column !important;
+        gap: calc($gap*2) !important;
+        margin: 0 !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trust__illustration{
+        display: block;
+        height: 100%;
+        width: auto;
+    }
+
+    .trust__startPosition{
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: start !important;
+        text-align: start;
+    }
+
+    .trust__endPosition{
+        width: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: end !important;
+        text-align: end;
+    }
+}

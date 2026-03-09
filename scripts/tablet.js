@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vroom</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles/css/main.css">
-</head>
-<body>
-    <div id="main" class="main vertical bigGap">
+export const tabletHTML = `
+    <div class="main vertical bigGap">
         <!--#################### -- HOME -- ####################-->
-        <div id="homeContainer" class="homeContainer sectionContainer vertical">
+        <!-- <div id="homeContainer" class="homeContainer sectionContainer vertical">
             <header class="horizontal header">
                 <div>
                     <img src="./assets/Logo.png" class="header__logo" alt="Logo Vroom">
@@ -47,8 +38,36 @@
                     <img src="./assets/Voiture.png" class="home__image" alt="Voiture">
                 </div>
             </div>
+        </div> -->
+        <div id="homeContainer" class="homeContainer sectionContainer vertical">
+            <header class="horizontal header">
+                <div>
+                    <img src="./assets/Logo.png" class="header__logo" alt="Logo Vroom">
+                </div>
+                <i class="fa-solid fa-bars"></i>
+            </header>
+            <div class="home__elements">
+                <div class="vertical home__info">
+                    <h1 class="h1__title">Covoiturez <strong>simplement</strong> partout en France</h1>
+                    <p class="paragraph">Découvrez Vroom, la nouvelle façon de voyager malin. Que ce soit pour un trajet quotidien ou de longues distances, trouvez rapidement un conducteur ou des passager partageant votre destination</p>
+                    <div class="inputContainer">
+                        <input type="text" class="inputText" placeholder="Où souhaitez-vous aller ?">
+                        <button class="button__inputText">
+                            <i class="fa-solid fa-magnifying-glass center"></i>
+                        </button>
+                    </div>
+                    <div>
+                    <img src="./assets/Voiture.png" class="home__image" alt="Voiture">
+                </div>
+                </div>
+                <div class="horizontal smallGap home__buttonInfoContainer">
+                    <button class="button">Créer un vroom</button>
+                    <button class="home__buttonPlay">
+                        <i class="fa-solid fa-play center"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-        
         <!--#################### -- BANNER -- ####################-->
         <div class="bannerBackground">
             <div id="bannerContainer" class="bannerContainer horizontal">
@@ -76,7 +95,7 @@
             </div>
         </div>
         <!--#################### -- EXPLANATION -- ####################-->
-        <div class="explanationContainer sectionContainer horizontal gap">
+        <!-- <div class="explanationContainer sectionContainer horizontal gap">
             <div class="explanation__covoiturage">
                 <div class="explanation__imageContainer">
                     <img src="./assets/Covoiturage.png"  class="explanation__image" alt="Rencontre covoiturage">
@@ -121,8 +140,53 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="explanationContainer sectionContainer horizontal gap">
+            <div class="vertical gap">
+                <h2 class="h2__title">Vroom <strong>simplifie</strong> vos déplacements quotidiens</h2>
+                <div class="explanation__covoiturage">
+                    <div class="explanation__imageContainer">
+                        <img src="./assets/Covoiturage.png"  class="explanation__image" alt="Rencontre covoiturage">
+                        <div class="explanation__trustContainer vertical">
+                            <p class="explanation__trustNumber">5k</p>
+                            <p class="explanation__trustParagraph">voyageurs heureux</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical gap explanation__infoContainer">
+                    <div class="horizontal smallGap explanation__elementContainer">
+                        <div class="explanation__iconContainer">
+                            <img src="./assets/icon_background.png" alt="">
+                            <i class="fa-solid fa-user explanation__icon center"></i>
+                        </div>
+                        <div class="vertical paragraphGap">
+                            <h3 class="h3__title">Trouvez votre conducteur</h3>
+                            <p class="paragraph">Recherchez parmi des milliers de trajets disponibles chaque jour en France</p>
+                        </div>
+                    </div>
+                    <div class="horizontal smallGap explanation__elementContainer">
+                        <div class="explanation__iconContainer">
+                            <img src="./assets/icon_background.png" alt="">
+                            <i class="fa-solid fa-arrow-pointer explanation__icon center"></i>
+                        </div>
+                        <div class="vertical paragraphGap">
+                            <h3 class="h3__title">Réservez en 1 clic</h3>
+                            <p class="paragraph">Paiement sécurisé et confirmation immédiate pour voyager l'esprit tranquille</p>
+                        </div>
+                    </div>
+                    <div class="horizontal smallGap explanation__elementContainer">
+                        <div class="explanation__iconContainer">
+                            <img src="./assets/icon_background.png" alt="">
+                            <i class="fa-solid fa-award explanation__icon center"></i>
+                        </div>
+                        <div class="vertical paragraphGap">
+                            <h3 class="h3__title">Gagnez des points</h3>
+                            <p class="paragraph">Chaque kilomètre parcouru vous rapporte des points à échanger contre des récompenses exclusives</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
         <!--#################### -- VIDEO -- ####################-->
         <div class="video__background">
             <div id="videoContainer" class="videoContainer">
@@ -175,7 +239,7 @@
             
         </div>
         <!--#################### -- POINT -- ####################-->
-        <div class="sectionContainer">
+        <!-- <div class="sectionContainer">
             <div class="pointContainer horizontal gap">
                 <div class="vertical gap point__infoContainer">
                     <h2 class="h2__title point__title">Cumulez des points et profitez d'avantages exclusifs</h2>
@@ -191,10 +255,26 @@
                     <img src="./assets/Points.png" class="point__image" alt="Carte Point">
                 </div>
             </div>
+        </div> -->
+        <div class="sectionContainer">
+            <div class="pointContainer horizontal gap">
+                <div class="vertical gap point__infoContainer">
+                    <h2 class="h2__title point__title">Cumulez des points et profitez d'avantages exclusifs</h2>
+                    <p class="point__paragraph">Chaque kilomètre parcouru vous rapporte des points fidélité à échanger contre des réductions ou des services</p>
+                    <div class="point__imageContainer center">
+                        <img src="./assets/Points.png" class="point__image" alt="Carte Point">
+                    </div>
+                </div>
+                <div class="inputContainer">
+                    <input type="text" class="inputText" placeholder="Saisissez votre code promo">
+                    <button class="button__inputText point__buttonInputText">
+                        <i class="fa-solid fa-magnifying-glass center"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-        
         <!--#################### -- MOBILE -- ####################-->
-        <div class="mobileContainer sectionContainer horizontal gap">
+        <!-- <div class="mobileContainer sectionContainer horizontal gap">
             <div class="vertical gap mobile__infoContainer">
                 <h2 class="h2__title">L'expérience Vroom <strong>mobile</strong></h2>
                 <button class="mobile__infoButton">Ouvrir l'application</button>
@@ -230,8 +310,50 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="mobileContainer sectionContainer vertical gap">
+            <div class="vertical gap mobile__infoContainer">
+                <h2 class="h2__title">L'expérience Vroom <strong>mobile</strong></h2>
+                    <div class="smallGap mobile__cardContainer">
+                        <div class="vertical mobile__card smallGap">
+                            <h4 class="h4__title mobile__cardTitle">Pour IOS</h4>
+                            <p class="paragraph">Téléchargez Vroom sur l'App Store et commencez à voyager</p>
+                            <button class="button">Téléchargez</button>
+                            <div class="horizontal mobile__logo">
+                                <div>
+                                    <img src="./assets/QRcode.png" class="mobile__QRcodeImage" alt="QRCode">
+                                </div>
+                                <div class="mobile__logoContainer">
+                                    <img src="./assets/Ios.png" class="mobile__logoImage" alt="Logo IOS">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical mobile__card smallGap">
+                            <h4 class="h4__title mobile__cardTitle">Pour Android</h4>
+                            <p class="paragraph">Disponible sur Google Play, installez l'application Vroom</p>
+                            <button class="button">Téléchargez</button>
+                            <div class="horizontal mobile__logo">
+                                <div>
+                                    <img src="./assets/QRcode.png" class="mobile__QRcodeImage" alt="QRCode">
+                                </div>
+                                <div class="mobile__logoContainer">
+                                    <img src="./assets/Android.png" class="mobile__logoImage" alt="Logo Android">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical smallGap center">
+                        <div>
+                            <img src="./assets/Logo_mobile.png" alt="">
+                        </div>
+                        <div class="vertical paragraphGap">
+                            <h3 class="h3__title">Simplifiez votre quotidien</h3>
+                            <p class="paragraph">Réservez, gérez et payez vos trajets directement depuis votre mobile</p>
+                        </div>
+                    </div>
+                <button class="mobile__infoButton center">Ouvrir l'application</button>
+            </div>
         </div>
-        
         <!--#################### -- REVIEW -- ####################-->
         <div class="review__background">
             <div class="reviewContainer vertical center gap">
@@ -248,7 +370,7 @@
             </div>
         </div>
         <!--#################### -- MAG -- ####################-->
-        <div class="magContainer sectionContainer vertical gap">
+        <!-- <div class="magContainer sectionContainer vertical gap">
             <div class="horizontal mag__header">
                 <h2 class="h2__title">Le <strong>mag'</strong> Vroom</h2>
                 <div class="mag__buttonContainer">
@@ -294,10 +416,57 @@
                     <p class="mag__blogMore">lire plus</p>
                 </div>
             </div>
+        </div> -->
+        <div class="magContainer sectionContainer vertical gap">
+            <h2 class="h2__title">Le <strong>mag'</strong> Vroom</h2>
+            <div class="vertical mag__blogContainer smallGap">
+                <div class="horizontal mag__blogElement smallGap">
+                    <div class="mag__imageContainer">
+                        <img src="./assets/Ville1.png" class="mag__image" alt="">
+                    </div>
+                    <div class="vertical smallGap mag__infoElement">
+                        <ul class="mag__tagContainer horizontal smallGap">
+                            <li>Inspiration</li>
+                        </ul>
+                        <p class="mag__blogTitle">5 idées de week-end évasion depuis votre ville</p>
+                        <p class="paragraph">Envie de déconnecter le temps d'un week-end ? Découvrez nos 5 destinations coup de coeur...</p>
+                    </div>
+                </div>
+                <div class="horizontal mag__blogElement smallGap">
+                    <div class="mag__imageContainer">
+                        <img src="./assets/Ville2.png" class="mag__image" alt="">
+                    </div>
+                    <div class="vertical smallGap mag__infoElement">
+                        <ul class="mag__tagContainer horizontal smallGap">
+                            <li>Conseils</li>
+                            <li>2026</li>
+                        </ul>
+                        <p class="mag__blogTitle">Comment voyager écolo sans se ruiner ?</p>
+                        <p class="paragraph">Le covoiturage est l'un des moyens de transport les plus vertueux. Voici comment optimiser...</p>
+                    </div>
+                </div>
+                <div class="horizontal mag__blogElement smallGap">
+                    <div class="mag__imageContainer">
+                        <img src="./assets/Ville3.png" class="mag__image" alt="">
+                    </div>
+                    <div class="vertical smallGap mag__infoElement">
+                        <ul class="mag__tagContainer horizontal smallGap">
+                            <li>Nouveautés</li>
+                        </ul>
+                        <p class="mag__blogTitle">Lancement de notre programme de fidélité "Vroomies"</p>
+                        <p class="paragraph">Bonne nouvelle ! Cumulez des points sur tous vos trajets et échangez-les dès maintenant</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mag__buttonContainer">
+                <button type="text" class="mag__button">Voir toutes les nouveautés</button>
+                <button class="mag__buttonIcon">
+                    <i class="fa-solid fa-arrow-right mag__fa-arrow-right center"></i>
+                </button>
+            </div>
         </div>
-        
         <!--#################### -- NEWSLETTER -- ####################-->
-        <div class="sectionContainer">
+        <!-- <div class="sectionContainer">
             <div class="newsletter__background newsletterContainer horizontal">
                 <div class="vertical gap newsletter__infoContainer">
                     <h2 class="h2__title">Inscrivez-vous pour recevoir la <strong>newsletter</strong></h2>
@@ -323,8 +492,36 @@
                 </div>
                 
             </div>
+        </div> -->
+        <div class="sectionContainer">
+            <div class="newsletter__background newsletterContainer vertical center">
+                <div class="vertical gap newsletter__infoContainer">
+                    <h2 class="h2__title">Inscrivez-vous pour recevoir la <strong>newsletter</strong></h2>
+                    <div class="vertical smallGap">
+                        <div>
+                            <img src="./assets/Logo_mobile.png" alt="">
+                        </div>
+                        <div class="vertical paragraphGap">
+                            <h3 class="h3__title">Restez toujours informés</h3>
+                            <p class="paragraph">Recevez nos bons plans et actus en avant-première</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/Dessin_voiture.png" alt="Voiture dessin">
+                    </div>
+                </div>
+                <div class="vertical smallGap newsletter__formContainer">
+                    <div class="inputContainer">
+                        <input type="text" class="newsletter__inputText" placeholder="votre adresse mail">
+                        <button class="newsletter__buttonInputText">
+                            <i class="fa-solid fa-arrow-right newsletter__fa-arrow-right center"></i>
+                        </button>
+                    </div>
+                    <button class="button newsletter__button">Rejoindre</button>
+                </div>
+                
+            </div>
         </div>
-        
         <!--#################### -- DESSIN -- ####################-->
         <div class="sectionContainer dessinContainer">
             <img src="./assets/dessin.png" class="dessin__image" alt="Dessin Trajet">
@@ -414,6 +611,4 @@
             </div>
         </footer>
     </div>
-    <script type="module" src="./scripts/index.js"></script>
-</body>
-</html>
+`

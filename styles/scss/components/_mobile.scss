@@ -45,3 +45,18 @@
 .mobile__cardTitle{
     text-wrap: nowrap;
 }
+
+@media screen and (max-width: 1024px){
+    .mobile__card{
+        aspect-ratio: 1/1;
+    }
+
+    .mobile__QRcodeImage{
+        width: auto;
+        height: 100%;
+    }
+
+    .mobile__infoButton{
+        width: 80%;
+    }
+}

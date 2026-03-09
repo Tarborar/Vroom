@@ -27,12 +27,18 @@
 }
 
 .bannerElement {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        flex: 1;
-    }
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+}
 
+.bannerContainer{
+    padding: $gap;
+}
+
+@media screen and (max-width: 1024px){
     .bannerContainer{
-        padding: $gap;
+        flex-direction: column !important;
     }
+}

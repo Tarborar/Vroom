@@ -31,3 +31,12 @@
     transform: translate(-50%,-50%);
 }
 
+.trust__illustration{
+    display: none;
+}
+
+@media screen and (max-width: 1024px){
+    .videoContainer{
+        width: 100%;
+    }
+}
