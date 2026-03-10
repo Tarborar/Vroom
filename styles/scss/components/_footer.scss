@@ -9,11 +9,7 @@ footer{
     width: 100%;
 }
 
-.footerContainer>*{
-    flex: 1;
-}
-
-.test{
+.footer__newsletterContainer{
     flex: 2 !important;
 }
 
@@ -23,12 +19,12 @@ footer{
     font-weight: $bold;
 }
 
-.footer__navigationContainer{
+.footer__navigationContainer, .footer__supportContainer{
     color: white;
     gap: 10px;
 }
 
-.footer__navigationContainer>li>a{
+.footer__navigationContainer>li>a, .footer__supportContainer>li>a{
     color: white;
 }
 
@@ -70,7 +66,6 @@ footer{
 
 @media screen and (max-width: 1024px){
     footer{
-        
         flex-direction: column !important;
     }
 
@@ -87,5 +82,42 @@ footer{
     .footer__logo{
         width: 100%;
         height: auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        padding: calc($gap/2);
+    }
+
+    .footerContainer{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .footer__navigationContainer{
+        text-align: start;
+    }
+
+    .footer__supportContainer{
+        text-align: end;
+    }
+
+    .footer__newsletterContainer{
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer__inputText{
+        height: $buttonHigh-mobile;
+    }
+
+    .footer__buttonInputText{
+        height: $buttonIcon-mobile;
+        width: $buttonIcon-mobile;
+    }
+
+    .footer__newsletterParagraph{
+        font-size: 16px;
     }
 }

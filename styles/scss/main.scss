@@ -133,3 +133,39 @@ strong{
     gap: 5px;
 }
 
+@media screen and (max-width: 768px){
+    .sectionContainer{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .h1__title, .h2__title{
+        font-size: 26px;
+    }
+
+    .h3__title{
+        font-size: 18px;
+    }
+
+    .h4__title{
+        font-size: 28px;
+    }
+
+    .paragraph{
+        font-size: 16px;
+    }
+
+    .button{
+        height: 48px;
+        font-size: 18px;
+    }
+
+    .inputText{
+        height: 48px;
+    }
+    .button__inputText{
+        height: 53px;
+        width: 53px;
+    }
+}
+

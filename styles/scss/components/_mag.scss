@@ -102,3 +102,33 @@
     }
 }
 
+@media screen and (max-width: 768px){
+    .mag__button{
+        width: 100%;
+        text-align: start;
+        justify-content: start;
+        padding-left: 25px;
+        height: $buttonHigh-mobile;
+    }
+
+    .mag__buttonIcon{
+        right: 0;
+    }
+
+    .mag__buttonIcon{
+        height: $buttonIcon-mobile;
+        width: $buttonIcon-mobile;
+    }
+
+    .mag__blogParagraph{
+        display: none;
+    }
+
+    .mag__tagContainer>li{
+        font-size: 16px;
+    }
+
+    .mag__blogMore{
+        font-size: 16px;
+    }
+}

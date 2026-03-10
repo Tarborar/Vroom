@@ -19,11 +19,11 @@ let currentDevice = null; //Permet d'éviter d'actualiser tout le innerHTML à c
 function getCurrentDevice(){
     const width = window.innerWidth;
 
-    if(width >= 1024){
+    if(width > 1024){
         device = "desktop";
     }
 
-    if(width < 1024){
+    if(width <= 1024){
         device = "tablet";
     }
 
@@ -50,32 +50,43 @@ function changeHTML(screenDevice){
                 break;
             case "mobile":
                 console.log("Screen mobile");
+                main.innerHTML = mobileHTML;
                 break;
         }
     } 
 }
 
+//Change la hauteur des backgrounds par rapport à l'overlap
+function changeBackgroundHigh(){
+    const bannerContainer = document.querySelector("#bannerContainer");
+    const bannerBackground = document.querySelector(".bannerBackground");
+    const videoContainer = document.querySelector("#videoContainer");
+    const videoBackground = document.querySelector(".video__background");
+
+    if(bannerContainer && bannerBackground){
+        const bannerContainerHeight = bannerContainer.offsetHeight;
+        bannerBackground.style.height = `${bannerContainerHeight}px`;
+    }
+
+    if(videoContainer && videoBackground){
+        const videoContainerHeight = videoContainer.offsetHeight;
+        videoBackground.style.height = `${videoContainerHeight}px`;
+    }
+}
+
 //Appelle les fonctions pour changer le HTML en fonction du device
 getCurrentDevice();
 changeHTML(device);
+changeBackgroundHigh();
 
 //Appelle les fonctions à chaque redimension de fenêtre
 addEventListener("resize", () => {
     getCurrentDevice();
     changeHTML(device);
-
-    //Met le background de banner à la même taille que son contenu pour gérer l'overlap
-    const bannerContainer = document.querySelector("#bannerContainer");
-    const bannerContainerHeight = bannerContainer.offsetHeight;
-    const bannerBackground = document.querySelector(".bannerBackground");
-    bannerBackground.style.height = `${bannerContainerHeight}px`;
-
-    //Met le background de video à la même taille que son contenu pour géer l'overlap
-    const videoContainer = document.querySelector("#videoContainer");
-    const videoContainerHeight = videoContainer.offsetHeight;
-    const videoBackground = document.querySelector(".video__background");
-    videoBackground.style.height = `${videoContainerHeight}px`;
+    changeBackgroundHigh();
 })
+
+
 
 
 

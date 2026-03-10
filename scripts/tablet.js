@@ -342,7 +342,7 @@ export const tabletHTML = `
                             </div>
                         </div>
                     </div>
-                    <div class="vertical smallGap center">
+                    <div class="vertical smallGap center mobile__logo">
                         <div>
                             <img src="./assets/Logo_mobile.png" alt="">
                         </div>
@@ -429,7 +429,7 @@ export const tabletHTML = `
                             <li>Inspiration</li>
                         </ul>
                         <p class="mag__blogTitle">5 idées de week-end évasion depuis votre ville</p>
-                        <p class="paragraph">Envie de déconnecter le temps d'un week-end ? Découvrez nos 5 destinations coup de coeur...</p>
+                        <p class="paragraph mag__blogParagraph">Envie de déconnecter le temps d'un week-end ? Découvrez nos 5 destinations coup de coeur...</p>
                     </div>
                 </div>
                 <div class="horizontal mag__blogElement smallGap">
@@ -442,7 +442,7 @@ export const tabletHTML = `
                             <li>2026</li>
                         </ul>
                         <p class="mag__blogTitle">Comment voyager écolo sans se ruiner ?</p>
-                        <p class="paragraph">Le covoiturage est l'un des moyens de transport les plus vertueux. Voici comment optimiser...</p>
+                        <p class="paragraph mag__blogParagraph">Le covoiturage est l'un des moyens de transport les plus vertueux. Voici comment optimiser...</p>
                     </div>
                 </div>
                 <div class="horizontal mag__blogElement smallGap">
@@ -454,7 +454,7 @@ export const tabletHTML = `
                             <li>Nouveautés</li>
                         </ul>
                         <p class="mag__blogTitle">Lancement de notre programme de fidélité "Vroomies"</p>
-                        <p class="paragraph">Bonne nouvelle ! Cumulez des points sur tous vos trajets et échangez-les dès maintenant</p>
+                        <p class="paragraph mag__blogParagraph">Bonne nouvelle ! Cumulez des points sur tous vos trajets et échangez-les dès maintenant</p>
                     </div>
                 </div>
             </div>

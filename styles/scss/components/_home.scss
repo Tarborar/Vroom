@@ -70,3 +70,26 @@ header{
         height: auto;
     }
 }
+
+@media screen and (max-width: 768px){
+    .homeContainer{
+        gap: calc($gap/2);
+    }
+
+    .home__info{
+        gap: calc($gap/2);
+    }
+
+    .home__elements{
+        gap: calc($gap/2);
+    }
+
+    .home__buttonPlay{
+        display: none;
+    }
+
+    .home__image{
+        width: 75%;
+        height: auto;
+    }
+}

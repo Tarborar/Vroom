@@ -41,7 +41,7 @@
     width: auto !important;
 }
 
-.newsletter__dessin{
+.newsletter__dessinContainer{
     position: absolute;
     bottom: -100px;
     right: 20%;
@@ -55,7 +55,7 @@
 }
 
 @media screen and (max-width: 1240px){
-    .newsletter__dessin{
+    .newsletter__dessinContainer{
         bottom: -100px;
         right: 0%;
     }
@@ -73,5 +73,30 @@
         //Padding 50px sauf pour le title 2 lignes
         padding-right: 25px;
         padding-left: 25px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .newsletterContainer{
+        gap: calc($gap/2);
+        padding: 25px 25px;
+        border-radius: $radius-mobile;
+    }
+
+    .newsletter__dessin{
+        width: 100%;
+    }
+
+    .newsletter__formContainer{
+        padding: 0;
+    }
+
+    .newsletter__inputText{
+        height: $buttonHigh-mobile;
+    }
+
+    .newsletter__buttonInputText{
+        height: $buttonIcon-mobile;
+        width: $buttonIcon-mobile;
     }
 }

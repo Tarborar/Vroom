@@ -49,3 +49,18 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 768px){
+    .pointContainer{
+        padding: 25px 16px;
+        border-radius: $radius-mobile;
+    }
+
+    .point__infoContainer{
+        gap: calc($gap/2) !important;
+    }
+
+    .point__paragraph{
+        font-size: 16px;
+    }
+}

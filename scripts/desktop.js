@@ -1,3 +1,4 @@
+//Optimiser et changer que les changements de structure
 export const desktopHTML = `
     <div id="main" class="main vertical bigGap">
         <!--#################### -- HOME -- ####################-->
@@ -309,7 +310,7 @@ export const desktopHTML = `
                     </div>
                     <button class="button newsletter__button">Rejoindre</button>
                 </div>
-                <div class="newsletter__dessin">
+                <div class="newsletter__dessinContainer">
                     <img src="./assets/Dessin_voiture.png" alt="Voiture dessin">
                 </div>
                 

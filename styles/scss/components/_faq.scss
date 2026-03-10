@@ -26,3 +26,20 @@
         text-wrap: balance;
     }
 }
+
+@media screen and (max-width: 768px){
+    .faq__questionContainer{
+        padding: 10px 16px;
+        text-align: start;
+        border-radius: 16px;
+    }
+
+    .faq__button{
+        width: $buttonIcon-mobile;
+        height: $buttonIcon-mobile;
+    }
+
+    .faq__question{
+        font-size: 21px;
+    }
+}

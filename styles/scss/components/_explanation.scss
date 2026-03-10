@@ -52,6 +52,7 @@
 }
 
 .explanation__infoContainer{
+    display: flex;
     align-items: center;
 }
 
@@ -90,18 +91,38 @@
     }
 
     .explanation__infoContainer{
-        display: flex;
-        justify-content: center;
+        width: 100%;
+        align-items: center;
     }
 
     .explanation__elementContainer{
-        max-width: 80%;
+        width: 80%;
     }
 
     .explanation__icon{
-        position: absolute;
         left: 50%;   
         top: 40%;
-        transform: translate(-50%,-50%);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .explanation__image{
+        width: 100%;
+    }
+
+    .explanation__trustContainer{
+        left: 10%;
+        width: 40%;
+    }
+
+    .explanation__iconContainer{
+        display: flex;
+        width: 55px;
+        height: 55px;
+    }
+
+    .explanation__icon{
+        left: 50%;   
+        top: 50%;
     }
 }

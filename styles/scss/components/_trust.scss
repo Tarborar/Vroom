@@ -59,3 +59,23 @@
         text-align: end;
     }
 }
+
+@media screen and (max-width: 768px){
+    .trust__number{
+        font-size: 28px;
+    }
+
+    .trust__titleNumber{
+        font-size: 21px;
+    }
+
+    .trust__illustration{
+        width: 100%;
+        height: auto;
+    }
+
+    .trustContainer >*{
+        flex: 1;
+        max-width: none;
+    }
+}

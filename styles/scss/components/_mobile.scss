@@ -60,3 +60,21 @@
         width: 80%;
     }
 }
+
+@media screen and (max-width: 768px){
+    .mobile__card{
+        border-radius: $radius-mobile;
+        padding: calc($gap/2);
+    }
+
+    .mobile__logo{
+        display: flex;
+        flex-direction: row !important;
+        text-align: start !important;
+    }
+
+    .mobile__infoButton{
+        width: 100%;
+        font-size: 18px;
+    }
+}
