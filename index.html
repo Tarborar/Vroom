@@ -17,11 +17,11 @@
                 </div>
                 <nav>
                     <ul id="header__navigation" class="horizontal header__navigation">
-                        <li><a href="">Accueil</a></li>
-                        <li><a href="">Avantages</a></li>
-                        <li><a href="">Application</a></li>
-                        <li><a href="">Mag'</a></li>
-                        <li><a href="">FAQ</a></li>
+                        <li><a href="#homeContainer">Accueil</a></li>
+                        <li><a href="#explanation">Avantages</a></li>
+                        <li><a href="#mobile">Application</a></li>
+                        <li><a href="#magContainer">Mag'</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </nav>
                 <button class="button">Connexion</button>
@@ -75,7 +75,7 @@
             </div>
         </div>
         <!--#################### -- EXPLANATION -- ####################-->
-        <div class="explanationContainer sectionContainer horizontal gap">
+        <div id="explanation" class="explanationContainer sectionContainer horizontal gap">
             <div class="explanation__covoiturage">
                 <div class="explanation__imageContainer">
                     <img src="./assets/Covoiturage.png"  class="explanation__image" alt="Rencontre covoiturage">
@@ -178,7 +178,7 @@
                     <h2 class="h2__title point__title">Cumulez des points et profitez d'avantages exclusifs</h2>
                     <p class="point__paragraph">Chaque kilomètre parcouru vous rapporte des points fidélité à échanger contre des réductions ou des services</p>
                     <div class="inputContainer">
-                        <input type="text" class="inputText" placeholder="Saisissez votre code promo">
+                        <input type="text" class="inputText point__inputText" placeholder="Saisissez votre code promo">
                         <button class="button__inputText point__buttonInputText">
                             <i class="fa-solid fa-magnifying-glass center"></i>
                         </button>
@@ -190,12 +190,14 @@
             </div>
         </div>
         <!--#################### -- MOBILE -- ####################-->
-        <div class="mobileContainer sectionContainer horizontal gap">
+        <div id="mobile" class="mobileContainer sectionContainer horizontal gap">
             <div class="vertical gap mobile__infoContainer">
                 <h2 class="h2__title">L'expérience Vroom <strong>mobile</strong></h2>
                 <button class="mobile__infoButton">Ouvrir l'application</button>
-                <div class="horizontal smallGap">
-                    <img src="./assets/Logo_mobile.png" alt="">
+                <div class="horizontal smallGap center">
+                    <div>
+                        <img src="./assets/Logo_mobile.png" class="logoApplication" alt="">
+                    </div>
                     <div class="vertical paragraphGap">
                         <h3 class="h3__title">Simplifiez votre quotidien</h3>
                         <p class="paragraph">Réservez, gérez et payez vos trajets directement depuis votre mobile</p>
@@ -231,15 +233,14 @@
         <div class="review__background">
             <div class="reviewContainer vertical center gap">
                 <h2 class="h2__title review__title">Les membres adorent</h2>
-                <div id="review" class="horizontal">
-                    <!-- avis -->
+                <div id="review" class="horizontal gap review__cardContainer carousel">
+                    <!-- data reviews -->
                 </div>
                 <div class="horizontal gap">
                     <i class="fa-solid fa-angle-left"></i>
                     <p class="review__count">01/12</p>
                     <i class="fa-solid fa-angle-right"></i>
                 </div>
-                
             </div>
         </div>
         <!--#################### -- MAG -- ####################-->
@@ -322,7 +323,7 @@
             <img src="./assets/dessin.png" class="dessin__image" alt="Dessin Trajet">
         </div>
         <!--#################### -- FAQ -- ####################-->
-        <div class="sectionContainer vertical bigGap">
+        <div id="faq" class="sectionContainer vertical bigGap">
             <h2 class="h2__title">Toutes les <strong>réponses</strong> à vos questions juste ici !</h2>
             <div class="faqContainer vertical smallGap">
                 <div>

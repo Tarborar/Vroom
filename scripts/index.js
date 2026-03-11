@@ -15,6 +15,28 @@ import {mobileHTML} from './mobile.js';
 let device; //média pour changeHTML()
 let currentDevice = null; //Permet d'éviter d'actualiser tout le innerHTML à chaque changement de innerWidth
 
+//Génère les reviews
+async function loadReviews(){
+    const response = await fetch ('./datas/reviews.json');
+    const data = await response.json();
+
+    const review = document.querySelector("#review");
+    review.innerHTML = data.reviews.map(r => `
+        <div class="vertical review__card smallGap">
+            <div class="horizontal smallGap">
+                <div class="review__avatarContainer">
+                    <img src="${r.avatar}" class="review__avatar" alt="">
+                </div>
+                <div class="vertical review__avatarInfo">
+                    <p class="review__name">${r.name}</p>
+                    <div class="review__star">${r.rating}</div>
+                </div>
+            </div>
+            <p class="paragraph review__comment">${r.comment}</p>
+        </div>
+    `);
+}
+
 //Définit quel est le device
 function getCurrentDevice(){
     const width = window.innerWidth;
@@ -86,8 +108,4 @@ addEventListener("resize", () => {
     changeBackgroundHigh();
 })
 
-
-
-
-
-
+loadReviews();

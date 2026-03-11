@@ -19,6 +19,15 @@
     font-size: 18px;
     font-weight: $light;
     width: fit-content;
+
+    transition: all $transition-fast ease;
+
+    &:hover{
+        cursor: pointer;
+        background-color: white;
+        color: $primary-color;
+        border: solid 1px $primary-color; 
+    }
 }
 
 .mag__buttonIcon{
@@ -30,6 +39,10 @@
     border-radius: 100px;
     position: absolute;
     top: -2.5px;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .mag__blogContainer>*{
@@ -44,6 +57,13 @@
     width: 100%;
     height: auto;
     border-radius: 33px;
+
+    transition: all $transition-fast ease;
+
+    &:hover{
+        filter: brightness(0.8);
+        cursor: pointer;
+    }
 }
 
 .mag__tagContainer>li{

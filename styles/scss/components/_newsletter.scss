@@ -23,6 +23,15 @@
     border: solid 1px #BFBFBF;
     padding: 0 25px;
     width: 100%;
+    font-weight: $bold;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.newsletter__inputText::placeholder{
+    font-weight: $light;
 }
 
 .newsletter__buttonInputText{
@@ -35,6 +44,10 @@
     border-radius: 100px;
     right: 0;
     top: -2.5px;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .newsletter__button{

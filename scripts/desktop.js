@@ -9,11 +9,11 @@ export const desktopHTML = `
                 </div>
                 <nav>
                     <ul id="header__navigation" class="horizontal header__navigation">
-                        <li><a href="">Accueil</a></li>
-                        <li><a href="">Avantages</a></li>
-                        <li><a href="">Application</a></li>
-                        <li><a href="">Mag'</a></li>
-                        <li><a href="">FAQ</a></li>
+                        <li><a href="#homeContainer">Accueil</a></li>
+                        <li><a href="#explanation">Avantages</a></li>
+                        <li><a href="#mobile">Application</a></li>
+                        <li><a href="#magContainer">Mag'</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </nav>
                 <button class="button">Connexion</button>
@@ -68,7 +68,7 @@ export const desktopHTML = `
             </div>
         </div>
         <!--#################### -- EXPLANATION -- ####################-->
-        <div class="explanationContainer sectionContainer horizontal gap">
+        <div id="explanation" class="explanationContainer sectionContainer horizontal gap">
             <div class="explanation__covoiturage">
                 <div class="explanation__imageContainer">
                     <img src="./assets/Covoiturage.png"  class="explanation__image" alt="Rencontre covoiturage">
@@ -186,12 +186,12 @@ export const desktopHTML = `
         </div>
         
         <!--#################### -- MOBILE -- ####################-->
-        <div class="mobileContainer sectionContainer horizontal gap">
+        <div id="mobile" class="mobileContainer sectionContainer horizontal gap">
             <div class="vertical gap mobile__infoContainer">
                 <h2 class="h2__title">L'expérience Vroom <strong>mobile</strong></h2>
                 <button class="mobile__infoButton">Ouvrir l'application</button>
                 <div class="horizontal smallGap">
-                    <img src="./assets/Logo_mobile.png" alt="">
+                    <img src="./assets/Logo_mobile.png" class="logoApplication" alt="">
                     <div class="vertical paragraphGap">
                         <h3 class="h3__title">Simplifiez votre quotidien</h3>
                         <p class="paragraph">Réservez, gérez et payez vos trajets directement depuis votre mobile</p>
@@ -228,8 +228,43 @@ export const desktopHTML = `
         <div class="review__background">
             <div class="reviewContainer vertical center gap">
                 <h2 class="h2__title review__title">Les membres adorent</h2>
-                <div id="review" class="horizontal">
-                    <!-- avis -->
+                <div id="review" class="horizontal gap review__cardContainer">
+                    <div class="vertical review__card smallGap">
+                        <div class="horizontal smallGap">
+                            <div class="review__avatarContainer">
+                                <img src="https://randomuser.me/api/portraits/women/11.jpg" class="review__avatar" alt="">
+                            </div>
+                            <div class="vertical review__avatarInfo">
+                                <p class="review__name">Manon Richard</p>
+                                <div class="review__star">Etoiles</div>
+                            </div>
+                        </div>
+                        <p class="paragraph review__comment">J'utilise Vroom tous les jours pour aller au travail. Économies garanties et bonne ambiance !</p>
+                    </div>
+                    <div class="vertical review__card smallGap">
+                        <div class="horizontal smallGap">
+                            <div class="review__avatarContainer">
+                                <img src="https://randomuser.me/api/portraits/women/11.jpg" class="review__avatar" alt="">
+                            </div>
+                            <div class="vertical review__avatarInfo">
+                                <p class="review__name">Manon Richard</p>
+                                <div class="review__star">Etoiles</div>
+                            </div>
+                        </div>
+                        <p class="paragraph review__comment">J'utilise Vroom tous les jours pour aller au travail. Économies garanties et bonne ambiance ! J'utilise Vroom tous les jours pour aller au travail.</p>
+                    </div>
+                    <div class="vertical review__card smallGap">
+                        <div class="horizontal smallGap">
+                            <div class="review__avatarContainer">
+                                <img src="https://randomuser.me/api/portraits/women/11.jpg" class="review__avatar" alt="">
+                            </div>
+                            <div class="vertical review__avatarInfo">
+                                <p class="review__name">Manon Richard</p>
+                                <div class="review__star">Etoiles</div>
+                            </div>
+                        </div>
+                        <p class="paragraph review__comment">J'utilise Vroom tous les jours pour aller au travail. Économies garanties et bonne ambiance !</p>
+                    </div>
                 </div>
                 <div class="horizontal gap">
                     <i class="fa-solid fa-angle-left"></i>
@@ -240,7 +275,7 @@ export const desktopHTML = `
             </div>
         </div>
         <!--#################### -- MAG -- ####################-->
-        <div class="magContainer sectionContainer vertical gap">
+        <div id="magContainer" class="magContainer sectionContainer vertical gap">
             <div class="horizontal mag__header">
                 <h2 class="h2__title">Le <strong>mag'</strong> Vroom</h2>
                 <div class="mag__buttonContainer">
@@ -294,7 +329,7 @@ export const desktopHTML = `
                 <div class="vertical gap newsletter__infoContainer">
                     <h2 class="h2__title">Inscrivez-vous pour recevoir la <strong>newsletter</strong></h2>
                     <div class="horizontal smallGap">
-                        <img src="./assets/Logo_mobile.png" alt="">
+                        <img src="./assets/Logo_mobile.png" class="logoApplication" alt="">
                         <div class="vertical paragraphGap">
                             <h3 class="h3__title">Restez toujours informés</h3>
                             <p class="paragraph">Recevez nos bons plans et actus en avant-première</p>
@@ -322,7 +357,7 @@ export const desktopHTML = `
             <img src="./assets/dessin.png" class="dessin__image" alt="Dessin Trajet">
         </div>
         <!--#################### -- FAQ -- ####################-->
-        <div class="sectionContainer vertical bigGap">
+        <div id="faq" class="sectionContainer vertical bigGap">
             <h2 class="h2__title">Toutes les <strong>réponses</strong> à vos questions juste ici !</h2>
             <div class="faqContainer vertical smallGap">
                 <div>

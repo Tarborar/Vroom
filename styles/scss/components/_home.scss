@@ -10,12 +10,24 @@ header{
 
 .header__logo{
     height: 21px;
+    transition: all 0.25s ease;
+    &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
 }
 
 .header__navigation{
     font-size: 21px;
     font-weight: $regular;
     gap: $gap;
+}
+
+.header__navigation>li>a{
+    transition: color $transition-fast ease;
+    &:hover{
+        color: $primary-color;
+    }
 }
 
 .home__elements{
@@ -39,6 +51,18 @@ header{
     border-radius: 100px;
     border: solid 1px $primary-color;
     background-color: white;
+
+    transition: all $transition ease;
+
+    &:hover{
+        cursor: pointer;
+        // border: none;
+        // background-color: $primary-color;
+        transform: scale(1.1);
+        // .fa-play{
+        //     color: white;
+        // }
+    }
 }
 
 .home__image{

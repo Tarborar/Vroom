@@ -1,0 +1,76 @@
+{
+  "reviews": [
+    {
+      "name": "Sophie Martin",
+      "rating": 5,
+      "comment": "Super expérience ! Conducteur ponctuel et agréable. L'application est très intuitive.",
+      "avatar": "https://randomuser.me/api/portraits/women/1.jpg"
+    },
+    {
+      "name": "Thomas Dubois",
+      "rating": 5,
+      "comment": "J'utilise Vroom tous les jours pour aller au travail. Économies garanties et bonne ambiance !",
+      "avatar": "https://randomuser.me/api/portraits/men/2.jpg"
+    },
+    {
+      "name": "Léa Petit",
+      "rating": 5,
+      "comment": "Idéal pour les longs trajets. J'ai trouvé un trajet Paris-Marseille à prix mini.",
+      "avatar": "https://randomuser.me/api/portraits/women/3.jpg"
+    },
+    {
+      "name": "Nicolas Leroy",
+      "rating": 5,
+      "comment": "Première expérience en tant que conducteur, passagers charmants. Je recommande !",
+      "avatar": "https://randomuser.me/api/portraits/men/4.jpg"
+    },
+    {
+      "name": "Camille Bernard",
+      "rating": 5,
+      "comment": "Application simple et efficace. Le système d'avis est rassurant.",
+      "avatar": "https://randomuser.me/api/portraits/women/5.jpg"
+    },
+    {
+      "name": "Antoine Moreau",
+      "rating": 5,
+      "comment": "Service client réactif quand j'ai eu un problème. Top !",
+      "avatar": "https://randomuser.me/api/portraits/men/6.jpg"
+    },
+    {
+      "name": "Julie Robert",
+      "rating": 5,
+      "comment": "Voyager devient un plaisir. On se sent en sécurité et on fait de belles rencontres.",
+      "avatar": "https://randomuser.me/api/portraits/women/7.jpg"
+    },
+    {
+      "name": "Maxime Garcia",
+      "rating": 5,
+      "comment": "Je ne peux plus m'en passer. Fini les bus bondés, place au confort de la voiture.",
+      "avatar": "https://randomuser.me/api/portraits/men/8.jpg"
+    },
+    {
+      "name": "Chloé Faure",
+      "rating": 5,
+      "comment": "Vroom a changé ma façon de voyager. C'est économique, écologique et convivial.",
+      "avatar": "https://randomuser.me/api/portraits/women/9.jpg"
+    },
+    {
+      "name": "Hugo Laurent",
+      "rating": 5,
+      "comment": "Super concept ! Les points de fidélité sont un vrai plus.",
+      "avatar": "https://randomuser.me/api/portraits/men/10.jpg"
+    },
+    {
+      "name": "Manon Richard",
+      "rating": 5,
+      "comment": "Trajet partagé avec une personne super sympa. L'application a facilité l'organisation.",
+      "avatar": "https://randomuser.me/api/portraits/women/11.jpg"
+    },
+    {
+      "name": "Pierre Durand",
+      "rating": 5,
+      "comment": "Simple, rapide, fiable. Que demander de plus ? Bravo à toute l'équipe Vroom.",
+      "avatar": "https://randomuser.me/api/portraits/men/12.jpg"
+    }
+  ]
+}

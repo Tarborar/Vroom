@@ -12,3 +12,81 @@
     font-size: 18px;
     font-weight: $light;
 }
+
+//Carousel
+#review{
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+#review::scroll-marker-group{
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+
+
+.review__cardContainer{
+    max-width: 80%;
+}
+
+.review__cardContainer>*{
+    flex: 1;
+}
+
+.review__card{
+    flex: 0 0 33%;
+    background-color: white;
+    padding: calc($gap/2);
+    border-radius: $radius-mobile;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.review__avatarInfo{
+    align-items: start;
+    gap: 5px;
+    text-align: start;
+}
+
+.review__name{
+    font-size: 21px;
+    font-weight: $bold;
+    color: $primary-color;
+}
+
+.review__avatarContainer{
+    width: 75px;
+    height: 75px;
+}
+
+.review__avatar{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.review__comment{
+    text-align: start;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1440px){
+    .review__cardContainer{
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .review__cardContainer{
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .review__cardContainer{
+        max-width: none;
+    }
+}

@@ -39,6 +39,15 @@ footer{
     padding: 0 25px;
     width: 100%;
     border: none;
+    font-weight: $bold;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.footer__inputText::placeholder{
+    font-weight: $light;
 }
 
 .footer__buttonInputText{
@@ -51,6 +60,10 @@ footer{
     border-radius: 100px;
     right: 0;
     top: -2.5px;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 1440px){

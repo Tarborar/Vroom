@@ -16,7 +16,15 @@
     background-color: $light-color;
     color: $paragraph-color;
     font-size: 21px;
-    font-weight: $bold;
+    font-weight: $medium;
+
+    transition: all $transition-fast ease;
+
+    &:hover{
+        border: solid 1px $primary-color;
+        color: $primary-color;
+        cursor: pointer;
+    }
 }
 
 .mobile__card{

@@ -27,6 +27,13 @@
 .point__image{
     width: 100%;
     height: auto;
+
+    transition: all $transition ease;
+
+    &:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 1440px){
