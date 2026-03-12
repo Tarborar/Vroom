@@ -217,51 +217,16 @@ export const tabletHTML = `
             </div>
         </div>
         <!--#################### -- REVIEW -- ####################-->
-        <div class="sectionContainer review__background">
+        <div class="review__background">
             <div class="reviewContainer vertical center gap">
                 <h2 class="h2__title review__title">Les membres adorent</h2>
                 <div id="review" class="vertical gap review__cardContainer">
-                    <div class="vertical review__card smallGap">
-                        <div class="horizontal smallGap">
-                            <div class="review__avatarContainer">
-                                <img src="https://randomuser.me/api/portraits/women/11.jpg" class="review__avatar" alt="">
-                            </div>
-                            <div class="vertical review__avatarInfo">
-                                <p class="review__name">Manon Richard</p>
-                                <div class="review__star">Etoiles</div>
-                            </div>
-                        </div>
-                        <p class="paragraph review__comment">J'utilise Vroom tous les jours pour aller au travail. Économies garanties et bonne ambiance !</p>
-                    </div>
-                    <div class="vertical review__card smallGap">
-                        <div class="horizontal smallGap">
-                            <div class="review__avatarContainer">
-                                <img src="https://randomuser.me/api/portraits/women/11.jpg" class="review__avatar" alt="">
-                            </div>
-                            <div class="vertical review__avatarInfo">
-                                <p class="review__name">Manon Richard</p>
-                                <div class="review__star">Etoiles</div>
-                            </div>
-                        </div>
-                        <p class="paragraph review__comment">J'utilise Vroom tous les jours pour aller au travail. Économies garanties et bonne ambiance ! J'utilise Vroom tous les jours pour aller au travail.</p>
-                    </div>
-                    <div class="vertical review__card smallGap">
-                        <div class="horizontal smallGap">
-                            <div class="review__avatarContainer">
-                                <img src="https://randomuser.me/api/portraits/women/11.jpg" class="review__avatar" alt="">
-                            </div>
-                            <div class="vertical review__avatarInfo">
-                                <p class="review__name">Manon Richard</p>
-                                <div class="review__star">Etoiles</div>
-                            </div>
-                        </div>
-                        <p class="paragraph review__comment">J'utilise Vroom tous les jours pour aller au travail. Économies garanties et bonne ambiance !</p>
-                    </div>
+                    
                 </div>
                 <div class="horizontal gap">
-                    <i class="fa-solid fa-angle-left"></i>
-                    <p class="review__count">01/12</p>
-                    <i class="fa-solid fa-angle-right"></i>
+                    <i id="reviewLeft" class="fa-solid fa-angle-left"></i>
+                    <p class="review__count">1/4</p>
+                    <i id="reviewRight" class="fa-solid fa-angle-right"></i>
                 </div>
                 
             </div>
@@ -350,50 +315,50 @@ export const tabletHTML = `
             <img src="./assets/dessin.png" class="dessin__image" alt="Dessin Trajet">
         </div>
         <!--#################### -- FAQ -- ####################-->
-        <div class="sectionContainer vertical bigGap">
+        <div id="faq" class="faqContainer sectionContainer vertical bigGap">
             <h2 class="h2__title">Toutes les <strong>réponses</strong> à vos questions juste ici !</h2>
-            <div class="faqContainer vertical smallGap">
-                <div>
+            <div class="vertical smallGap">
+                <div class="faq__elementContainer vertical smallGap">
                     <div class="horizontal faq__questionContainer">
                         <p class="faq__question">Comment créer un compte Vroom ?</p>
                         <button class="faq__button">+</button>
                     </div>
-                    <p class="faq__answer"></p>
+                    <p class="paragraph faq__answer">C'est très simple ! Cliquez sur 'S'inscrire', remplissez vos informations personnelles et vérifiez votre profil avec une pièce d'identité pour garantir la sécurité de la communauté. Vous pourrez ensuite proposer ou réserver</p>
                 </div>
-                <div>
+                <div class="faq__elementContainer vertical smallGap">
                     <div class="horizontal faq__questionContainer">
                         <p class="faq__question">Comment fonctionnent les points ?</p>
                         <button class="faq__button">+</button>
                     </div>
-                    <p class="faq__answer"></p>
+                    <p class="paragraph faq__answer">À chaque trajet effectué, vous cumulez des points. Ces points sont visibles sur votre profil et peuvent être convertis en bons de réduction pour vos futurs voyages ou chez nos nombreux partenaires de mobilité</p>
                 </div>
-                <div>
+                <div class="faq__elementContainer vertical smallGap">
                     <div class="horizontal faq__questionContainer">
                         <p class="faq__question">Puis-je annuler une réservation ?</p>
                         <button class="faq__button">+</button>
                     </div>
-                    <p class="faq__answer"></p>
+                    <p class="paragraph faq__answer">L'annulation est possible depuis votre espace personnel. Selon le délai avant le départ, un remboursement intégral ou partiel sera effectué. Consultez nos conditions générales pour connaître les barèmes appliqués</p>
                 </div>
-                <div>
+                <div class="faq__elementContainer vertical smallGap">
                     <div class="horizontal faq__questionContainer">
                         <p class="faq__question">Quelle est la politique des bagages ?</p>
                         <button class="faq__button">+</button>
                     </div>
-                    <p class="faq__answer"></p>
+                    <p class="paragraph faq__answer">Il n'y a pas de règle stricte, mais par souci de courtoisie et de place, nous recommandons de limiter vos bagages à une valise de taille moyenne et un bagage à main par personne. Lors de la réservation, vous pouvez indiquer le nombre de bagages que vous avez</p>
                 </div>
-                <div>
+                <div class="faq__elementContainer vertical smallGap">
                     <div class="horizontal faq__questionContainer">
                         <p class="faq__question">Le site est-il sécurisé ?</p>
                         <button class="faq__button">+</button>
                     </div>
-                    <p class="faq__answer"></p>
+                    <p class="paragraph faq__answer">Absolument. Nous utilisons des protocoles de paiement cryptés et vérifions manuellement les profils. Notre système d'avis permet de maintenir un haut niveau de confiance et de transparence entre tous les membres</p>
                 </div>
-                <div>
+                <div class="faq__elementContainer vertical smallGap">
                     <div class="horizontal faq__questionContainer">
                         <p class="faq__question">Puis-je amener mes animaux de compagnie ?</p>
                         <button class="faq__button">+</button>
                     </div>
-                    <p class="faq__answer"></p>
+                    <p class="paragraph faq__answer">Cela dépend du conducteur ! L'icône 'animaux acceptés' figure sur les annonces concernées. Si vous avez un doute, nous vous conseillons de contacter directement le propriétaire du véhicule avant de valider</p>
                 </div>
             </div>
         </div>

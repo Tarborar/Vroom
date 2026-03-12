@@ -27,6 +27,18 @@
 .fa-angle-left, .fa-angle-right{
     color: #7FC4EA;
     font-size: 18px;
+
+    transition: all $transition-fast ease;
+
+    &:hover{
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.fa-star{
+    color: #FDA400;
+    font-size: 12px;
 }
 
 .mag__fa-arrow-right{
@@ -47,7 +59,7 @@
     font-size: 36px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .fa-arrow-up{
         font-size: 28px;
     }

@@ -1,12 +1,23 @@
-.faq__questionContainer{
-    color: white;
-    background-color: $primary-color;
-    font-size: 36px;
-    font-weight: $bold;
+.faqContainer{
+    width: 100%;
+}
 
-    justify-content: space-between;
+.faq__elementContainer{
+    background-color: $primary-color;
     padding: 25px 50px;
     border-radius: 25px;
+
+    &:hover{
+        filter: brightness(1.05);
+        cursor: pointer;
+    }
+}
+
+.faq__questionContainer{
+    color: white;
+    font-size: 36px;
+    font-weight: $bold;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -18,18 +29,46 @@
     font-size: 21px;
     font-weight: $bold;
     color: $primary-color;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.faq__answer{
+    display: none;
+}
+
+
+//Toggle au clic FAQ
+.faq__elementContainer.active {
+    background-color: white;
+    outline: solid 2px $primary-color;
+}
+
+.faq__elementContainer.active .faq__answer {
+    display: block;
+}
+
+.faq__elementContainer.active .faq__questionContainer{
+    color: $primary-color;
+}
+
+.faq__elementContainer.active .faq__button{
+    background-color: white;
+    outline: solid 1px $primary-color;
 }
 
 @media screen and (max-width: 1024px){
-    .faq__questionContainer{
+    .faq__elementContainer{
         padding: 25px 25px;
         text-wrap: balance;
     }
 }
 
-@media screen and (max-width: 768px){
-    .faq__questionContainer{
-        padding: 10px 16px;
+@media screen and (max-width: 767px){
+    .faq__elementContainer{
+        padding: 16px 16px;
         text-align: start;
         border-radius: 16px;
     }

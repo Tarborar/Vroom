@@ -1,27 +1,49 @@
-/*
-Section qui change en fonction du device :
-    -Home
-    -Explanation
-    -Point
-    -Mobile
-    -Mag faisable avec des display none mais il faut quand même générer un bouton en js
-    -Newsletter on vire le position absolute
-*/
-
 import {desktopHTML} from './desktop.js';
 import {tabletHTML} from './tablet.js';
 import {mobileHTML} from './mobile.js';
 
 let device; //média pour changeHTML()
 let currentDevice = null; //Permet d'éviter d'actualiser tout le innerHTML à chaque changement de innerWidth
+let currentReview = 0; //Changera pour charger le bloc de review
 
-//Génère les reviews
+let allReviews; //récupèrera les reviews
+let splitReview = [];
+
+//Charge les reviews
 async function loadReviews(){
     const response = await fetch ('./datas/reviews.json');
     const data = await response.json();
 
+    allReviews = data.reviews;
+
+    splitReviews(allReviews);
+    displayReviews();
+}
+
+//Range toutes les reviews 3 par 3 dans un nouveau tableau
+function splitReviews(reviews){
+    const maxReview = 3; 
+    
+    for (let i=0; i<reviews.length; i+=maxReview) {
+        splitReview.push(reviews.slice(i,i+maxReview));
+    }
+}
+
+//Range les reviews par 3 dans un autre tableau
+function displayReviews(){
+
+    function generateStars(rating) {
+        let stars = '';
+        for (let i = 0; i < rating; i++) {
+            stars += '<i class="fa-solid fa-star"></i>';
+        }
+        return stars;
+    }
+    
     const review = document.querySelector("#review");
-    review.innerHTML = data.reviews.map(r => `
+
+    //charge les 3 reviews du currentReview
+    review.innerHTML = splitReview[currentReview].map(r => `
         <div class="vertical review__card smallGap">
             <div class="horizontal smallGap">
                 <div class="review__avatarContainer">
@@ -29,12 +51,14 @@ async function loadReviews(){
                 </div>
                 <div class="vertical review__avatarInfo">
                     <p class="review__name">${r.name}</p>
-                    <div class="review__star">${r.rating}</div>
+                    <ul class="review__starContainer">
+                        ${generateStars(r.rating)}
+                    </ul>
                 </div>
             </div>
             <p class="paragraph review__comment">${r.comment}</p>
         </div>
-    `);
+    `).join(''); //Supprime les "," 
 }
 
 //Définit quel est le device
@@ -75,7 +99,7 @@ function changeHTML(screenDevice){
                 main.innerHTML = mobileHTML;
                 break;
         }
-    } 
+    }
 }
 
 //Change la hauteur des backgrounds par rapport à l'overlap
@@ -96,16 +120,72 @@ function changeBackgroundHigh(){
     }
 }
 
+//Rattache les éléments lorsqu'ils sont changés dans changeHTML sinon ça ne fonctionne pas
+function initializeDomElement(){
+    const reviewLeft = document.querySelector("#reviewLeft");
+    const reviewRight = document.querySelector("#reviewRight");
+    const reviewCount = document.querySelector(".review__count");
+
+    const faqsElementContainer = document.querySelectorAll(".faq__elementContainer");
+
+    //Met à jour l'affichage du splitReview[currentReview]
+    reviewLeft.addEventListener("click", () =>{
+        review.classList.add('slide-right');
+
+        if(currentReview === 0){
+            currentReview = splitReview.length - 1;
+        }else{
+            currentReview --;
+        }
+
+        reviewCount.innerText = `${currentReview + 1}/4`
+        displayReviews();
+
+        setTimeout(() => {
+            review.classList.remove('slide-right');
+        }, 500);
+    });
+
+    reviewRight.addEventListener("click", () =>{
+        review.classList.add('slide-left');
+
+        if(currentReview === splitReview.length - 1){
+            currentReview = 0
+        } else{
+            currentReview ++;
+        }
+        
+        reviewCount.innerText = `${currentReview + 1}/4`
+        displayReviews();
+
+        setTimeout(() => {
+            review.classList.remove('slide-left');
+        }, 500);
+    });
+
+    faqsElementContainer.forEach(faqElementContainer =>{
+        faqElementContainer.addEventListener("click", (e) =>{
+            //toggle la classe .active
+            e.currentTarget.classList.toggle('active');
+        })
+    });
+}
+
 //Appelle les fonctions pour changer le HTML en fonction du device
 getCurrentDevice();
 changeHTML(device);
 changeBackgroundHigh();
+loadReviews();
+initializeDomElement()
 
 //Appelle les fonctions à chaque redimension de fenêtre
 addEventListener("resize", () => {
     getCurrentDevice();
     changeHTML(device);
     changeBackgroundHigh();
-})
+    loadReviews();
+    initializeDomElement()
+});
 
-loadReviews();
+
+

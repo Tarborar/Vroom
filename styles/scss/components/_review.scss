@@ -13,21 +13,10 @@
     font-weight: $light;
 }
 
-//Carousel
-#review{
-    overflow: auto;
-    scroll-behavior: smooth;
-}
-
-#review::scroll-marker-group{
-    display: flex;
-    justify-content: center;
-    gap: .5em;
-}
-
-
 .review__cardContainer{
     max-width: 80%;
+
+    transition: transform $transition ease;
 }
 
 .review__cardContainer>*{
@@ -35,16 +24,57 @@
 }
 
 .review__card{
-    flex: 0 0 33%;
     background-color: white;
     padding: calc($gap/2);
     border-radius: $radius-mobile;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    aspect-ratio: 16/9;
+
+    transition: opacity $transition ease;
 
     &:hover{
         cursor: pointer;
     }
 }
+
+.review__starContainer{
+    display: flex;
+    gap: 3px;
+}
+
+//Animation slide
+.slide-left {
+    animation: slideLeft 0.5s ease;
+}
+
+.slide-right {
+    animation: slideRight 0.5s ease;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
 
 .review__avatarInfo{
     align-items: start;
@@ -83,10 +113,18 @@
     .review__cardContainer{
         max-width: 80%;
     }
+
+    .review__card{
+        aspect-ratio: auto;
+    }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .review__cardContainer{
         max-width: none;
+    }
+
+        .review__background{
+        padding: 16px;
     }
 }
