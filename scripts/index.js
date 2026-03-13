@@ -1,6 +1,19 @@
-import {desktopHTML} from './desktop.js';
-import {tabletHTML} from './tablet.js';
-import {mobileHTML} from './mobile.js';
+import {
+    homeHTML,
+    homeAdaptiveHTML, 
+    explanationHTML,
+    explanationAdaptiveHTML, 
+    pointHTML,
+    pointAdaptiveHTML, 
+    mobileHTML,
+    mobileAdaptiveHTML, 
+    magHTML,
+    magAdaptiveHTML, 
+    magAdaptiveMobileHTML,
+    newsletterHTML,
+    newsletterAdaptiveHTML,
+    newsletterAdaptiveMobileHTML
+} from './adaptive.js';
 
 let device; //média pour changeHTML()
 let currentDevice = null; //Permet d'éviter d'actualiser tout le innerHTML à chaque changement de innerWidth
@@ -40,10 +53,10 @@ function displayReviews(){
         return stars;
     }
     
-    const review = document.querySelector("#review");
+    const reviewContainer = document.querySelector("#reviewContainer");
 
     //charge les 3 reviews du currentReview
-    review.innerHTML = splitReview[currentReview].map(r => `
+    reviewContainer.innerHTML = splitReview[currentReview].map(r => `
         <div class="vertical review__card smallGap">
             <div class="horizontal smallGap">
                 <div class="review__avatarContainer">
@@ -84,19 +97,42 @@ function changeHTML(screenDevice){
         currentDevice = device;
 
         const main = document.querySelector("#main");
+        const home = document.querySelector("#home");
+        const explanation = document.querySelector("#explanation");
+        const point = document.querySelector("#point");
+        const mobile = document.querySelector("#mobile");
+        const mag = document.querySelector("#mag");
+        const newsletter = document.querySelector("#newsletter");
 
         switch(screenDevice){
             case "desktop":
                 console.log("Screen PC");
-                main.innerHTML = desktopHTML;
+                home.innerHTML = homeHTML;
+                explanation.innerHTML = explanationHTML;
+                point.innerHTML = pointHTML;
+                mobile.innerHTML = mobileHTML;
+                mag.innerHTML = magHTML;
+                newsletter.innerHTML = newsletterHTML;
                 break;
+
             case "tablet":
                 console.log("Screen tablette");
-                main.innerHTML = tabletHTML;
+                home.innerHTML = homeAdaptiveHTML;
+                explanation.innerHTML = explanationAdaptiveHTML;
+                point.innerHTML = pointAdaptiveHTML;
+                mobile.innerHTML = mobileAdaptiveHTML;
+                mag.innerHTML = magAdaptiveHTML;
+                newsletter.innerHTML = newsletterAdaptiveHTML;
                 break;
+
             case "mobile":
                 console.log("Screen mobile");
-                main.innerHTML = mobileHTML;
+                home.innerHTML = homeAdaptiveHTML;
+                explanation.innerHTML = explanationAdaptiveHTML;
+                point.innerHTML = pointAdaptiveHTML;
+                mobile.innerHTML = mobileAdaptiveHTML;
+                mag.innerHTML = magAdaptiveMobileHTML;
+                newsletter.innerHTML = newsletterAdaptiveMobileHTML;
                 break;
         }
     }
@@ -125,12 +161,12 @@ function initializeDomElement(){
     const reviewLeft = document.querySelector("#reviewLeft");
     const reviewRight = document.querySelector("#reviewRight");
     const reviewCount = document.querySelector(".review__count");
-
+    const reviewContainer = document.querySelector("#reviewContainer");
     const faqsElementContainer = document.querySelectorAll(".faq__elementContainer");
 
     //Met à jour l'affichage du splitReview[currentReview]
     reviewLeft.addEventListener("click", () =>{
-        review.classList.add('slide-right');
+        reviewContainer.classList.add('slide-right');
 
         if(currentReview === 0){
             currentReview = splitReview.length - 1;
@@ -142,12 +178,12 @@ function initializeDomElement(){
         displayReviews();
 
         setTimeout(() => {
-            review.classList.remove('slide-right');
+            reviewContainer.classList.remove('slide-right');
         }, 500);
     });
 
     reviewRight.addEventListener("click", () =>{
-        review.classList.add('slide-left');
+        reviewContainer.classList.add('slide-left');
 
         if(currentReview === splitReview.length - 1){
             currentReview = 0
@@ -159,7 +195,7 @@ function initializeDomElement(){
         displayReviews();
 
         setTimeout(() => {
-            review.classList.remove('slide-left');
+            reviewContainer.classList.remove('slide-left');
         }, 500);
     });
 
@@ -176,7 +212,7 @@ getCurrentDevice();
 changeHTML(device);
 changeBackgroundHigh();
 loadReviews();
-initializeDomElement()
+initializeDomElement();
 
 //Appelle les fonctions à chaque redimension de fenêtre
 addEventListener("resize", () => {
@@ -184,7 +220,7 @@ addEventListener("resize", () => {
     changeHTML(device);
     changeBackgroundHigh();
     loadReviews();
-    initializeDomElement()
+    initializeDomElement();
 });
 
 

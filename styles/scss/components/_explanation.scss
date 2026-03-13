@@ -107,11 +107,13 @@
 
 @media screen and (max-width: 767px){
     .explanation__image{
+        max-width: 400px;
         width: 100%;
     }
 
     .explanation__trustContainer{
-        left: 10%;
+        max-width: 160px;
+        left: 12%;
         width: 40%;
     }
 
