@@ -22,6 +22,12 @@ let currentReview = 0; //Changera pour charger le bloc de review
 let allReviews; //récupèrera les reviews
 let splitReview = [];
 
+const reviewLeft = document.querySelector("#reviewLeft");
+const reviewRight = document.querySelector("#reviewRight");
+const reviewCount = document.querySelector(".review__count");
+const reviewContainer = document.querySelector("#reviewContainer");
+const faqsElementContainer = document.querySelectorAll(".faq__elementContainer");
+
 //Charge les reviews
 async function loadReviews(){
     const response = await fetch ('./datas/reviews.json');
@@ -156,72 +162,83 @@ function changeBackgroundHigh(){
     }
 }
 
-//Rattache les éléments lorsqu'ils sont changés dans changeHTML sinon ça ne fonctionne pas
-function initializeDomElement(){
-    const reviewLeft = document.querySelector("#reviewLeft");
-    const reviewRight = document.querySelector("#reviewRight");
-    const reviewCount = document.querySelector(".review__count");
-    const reviewContainer = document.querySelector("#reviewContainer");
-    const faqsElementContainer = document.querySelectorAll(".faq__elementContainer");
-
-    //Met à jour l'affichage du splitReview[currentReview]
-    reviewLeft.addEventListener("click", () =>{
-        reviewContainer.classList.add('slide-right');
-
-        if(currentReview === 0){
-            currentReview = splitReview.length - 1;
-        }else{
-            currentReview --;
-        }
-
-        reviewCount.innerText = `${currentReview + 1}/4`
-        displayReviews();
-
-        setTimeout(() => {
-            reviewContainer.classList.remove('slide-right');
-        }, 500);
-    });
-
-    reviewRight.addEventListener("click", () =>{
-        reviewContainer.classList.add('slide-left');
-
-        if(currentReview === splitReview.length - 1){
-            currentReview = 0
-        } else{
-            currentReview ++;
-        }
-        
-        reviewCount.innerText = `${currentReview + 1}/4`
-        displayReviews();
-
-        setTimeout(() => {
-            reviewContainer.classList.remove('slide-left');
-        }, 500);
-    });
-
-    faqsElementContainer.forEach(faqElementContainer =>{
-        faqElementContainer.addEventListener("click", (e) =>{
-            //toggle la classe .active
-            e.currentTarget.classList.toggle('active');
-        })
-    });
-}
-
 //Appelle les fonctions pour changer le HTML en fonction du device
 getCurrentDevice();
 changeHTML(device);
 changeBackgroundHigh();
 loadReviews();
-initializeDomElement();
+revealAnimation();
 
 //Appelle les fonctions à chaque redimension de fenêtre
 addEventListener("resize", () => {
     getCurrentDevice();
     changeHTML(device);
     changeBackgroundHigh();
-    loadReviews();
-    initializeDomElement();
+    revealAnimation();
 });
 
+//Met à jour l'affichage du splitReview[currentReview]
+reviewLeft.addEventListener("click", () =>{
+    reviewContainer.classList.add('slide-right');
 
+    if(currentReview === 0){
+        currentReview = splitReview.length - 1;
+    }else{
+        currentReview --;
+    }
+
+    reviewCount.innerText = `${currentReview + 1}/${splitReview.length}`
+    displayReviews();
+
+    setTimeout(() => {
+        reviewContainer.classList.remove('slide-right');
+    }, 500);
+});
+
+reviewRight.addEventListener("click", () =>{
+    reviewContainer.classList.add('slide-left');
+
+    if(currentReview === splitReview.length - 1){
+        currentReview = 0
+    } else{
+        currentReview ++;
+    }
+    
+    reviewCount.innerText = `${currentReview + 1}/${splitReview.length}`
+    displayReviews();
+
+    setTimeout(() => {
+        reviewContainer.classList.remove('slide-left');
+    }, 500);
+});
+
+faqsElementContainer.forEach(faqElementContainer =>{
+    faqElementContainer.addEventListener("click", (e) =>{
+        //toggle la classe .active
+        e.currentTarget.classList.toggle('active');
+    })
+});
+
+//Active les animations d'apparition
+function revealAnimation(){
+    const observer = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+            if(entry.isIntersecting){
+                entry.target.classList.add("active");
+            }
+        });
+    });
+
+    document.querySelectorAll(".reveal").forEach(el=>{
+        observer.observe(el);
+    });
+
+    document.querySelectorAll(".reveal-group").forEach(group => {
+        const items = group.querySelectorAll(".reveal");
+
+        items.forEach((el, index) => {
+            el.style.transitionDelay = `${index * 100}ms`;
+        });
+    });
+}
 

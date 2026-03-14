@@ -1,3 +1,41 @@
+.modale{
+    position: fixed;
+    height: 100vh;
+    width: 61.5vw;
+    background-color: $primary-color;
+    right: 0;
+    padding: 25px;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.modale__menuContainer>li{
+    display: flex;
+    align-items: center;
+    height: 55px;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.modale__menuContainer>li>a{
+    color: white;
+    font-size: 21px;
+    font-weight: $medium;
+}
+
+.closeContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modale__logo{
+    height: 21px;
+    width: auto;
+}
+
 .homeContainer{
     gap: 200px;
 }
@@ -19,7 +57,7 @@ header{
 
 .header__navigation{
     font-size: 21px;
-    font-weight: $regular;
+    font-weight: $medium;
     gap: $gap;
 }
 

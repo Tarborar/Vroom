@@ -10,14 +10,27 @@
 <body>
     <div id="main" class="main vertical bigGap">
         <!--#################### -- HOME -- ####################-->
+        <!-- <div class="modale vertical gap">
+            <div class="closeContainer">
+                <img src="./assets/Logo_blanc.png" class="modale__logo" alt="">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul class="vertical modale__menuContainer">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#explanation">Avantages</a></li>
+                <li><a href="#mobile">Application</a></li>
+                <li><a href="#mag">Mag'</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div> -->
         <div id="home">
             <div class="homeContainer sectionContainer vertical">
-                <header class="horizontal header">
+                <header class="horizontal header reveal-group">
                     <div>
-                        <img src="./assets/Logo.png" class="header__logo" alt="Logo Vroom">
+                        <img src="./assets/Logo.png" class="header__logo reveal reveal-X" alt="Logo Vroom">
                     </div>
                     <nav>
-                        <ul id="header__navigation" class="horizontal header__navigation">
+                        <ul id="header__navigation" class="horizontal header__navigation reveal reveal-X">
                             <li><a href="#home">Accueil</a></li>
                             <li><a href="#explanation">Avantages</a></li>
                             <li><a href="#mobile">Application</a></li>
@@ -25,49 +38,49 @@
                             <li><a href="#faq">FAQ</a></li>
                         </ul>
                     </nav>
-                    <button class="button">Connexion</button>
+                    <button class="button reveal reveal-X">Connexion</button>
                 </header>
-                <div class="home__elements">
+                <div class="home__elements reveal-group">
                     <div class="vertical home__info">
-                        <h1 class="h1__title">Covoiturez <strong>simplement</strong> partout en France</h1>
-                        <p class="paragraph">Découvrez Vroom, la nouvelle façon de voyager malin. Que ce soit pour un trajet quotidien ou de longues distances, trouvez rapidement un conducteur ou des passager partageant votre destination</p>
-                        <div class="inputContainer">
+                        <h1 class="h1__title reveal revealY">Covoiturez <strong>simplement</strong> partout en France</h1>
+                        <p class="paragraph reveal revealY">Découvrez Vroom, la nouvelle façon de voyager malin. Que ce soit pour un trajet quotidien ou de longues distances, trouvez rapidement un conducteur ou des passager partageant votre destination</p>
+                        <div class="inputContainer reveal revealY">
                             <input type="text" class="inputText" placeholder="Où souhaitez-vous aller ?">
                             <button class="button__inputText">
                                 <i class="fa-solid fa-magnifying-glass center"></i>
                             </button>
                         </div>
-                        <div class="horizontal smallGap home__buttonInfoContainer">
+                        <div class="horizontal smallGap home__buttonInfoContainer reveal revealY">
                             <button class="button">Créer un vroom</button>
                             <button class="home__buttonPlay">
                                 <i class="fa-solid fa-play center"></i>
                             </button>
                         </div>
                     </div>
-                    <div>
-                        <img src="./assets/Voiture.png" class="home__image" alt="Voiture">
+                    <div class="reveal-group">
+                        <img src="./assets/Voiture.png" class="home__image reveal revealX" alt="Voiture">
                     </div>
                 </div>
             </div>
         </div>
         <!--#################### -- BANNER -- ####################-->
-        <div class="bannerBackground">
+        <div class="bannerBackground reveal-group">
             <div id="bannerContainer" class="bannerContainer horizontal">
-                <div class="smallGap bannerElement">
+                <div class="smallGap bannerElement reveal reveal-X">
                     <i class="fa-solid fa-earth-americas"></i>
                     <div class="vertical paragraphGap">
                         <h3 class="h3__title">Plus écoresponsable</h3>
                         <p class="paragraph">Réduisez ensemble votre empreinte carbone au quotidien</p>
                     </div>
                 </div>
-                <div class="smallGap bannerElement">
+                <div class="smallGap bannerElement reveal reveal-X">
                     <i class="fa-solid fa-tag"></i>
                     <div class="vertical paragraphGap">
                         <h3 class="h3__title">A prix mini</h3>
                         <p class="paragraph">Économisez jusqu'à 60% sur vos trajets quotidiens</p>
                     </div>
                 </div>
-                <div class="smallGap bannerElement">
+                <div class="smallGap bannerElement reveal reveal-X">
                     <i class="fa-solid fa-check"></i>
                     <div class="vertical paragraphGap">
                         <h3 class="h3__title">En toute confiance</h3>
@@ -78,20 +91,20 @@
         </div>
         <!--#################### -- EXPLANATION -- ####################-->
         <div id="explanation">
-            <div class="explanationContainer sectionContainer horizontal gap">
+            <div class="explanationContainer sectionContainer horizontal gap reveal-group">
                 <div class="explanation__covoiturage">
                     <div class="explanation__imageContainer">
-                        <img src="./assets/Covoiturage.png"  class="explanation__image" alt="Rencontre covoiturage">
-                        <div class="explanation__trustContainer vertical">
+                        <img src="./assets/Covoiturage.png"  class="explanation__image reveal reveal-X" alt="Rencontre covoiturage">
+                        <div class="explanation__trustContainer vertical reveal reveal-X">
                             <p class="explanation__trustNumber">5k</p>
                             <p class="explanation__trustParagraph">voyageurs heureux</p>
                         </div>
                     </div>
                 </div>
-                <div class="vertical gap">
-                    <h2 class="h2__title">Vroom <strong>simplifie</strong> vos déplacements quotidiens</h2>
+                <div class="vertical gap reveal-group">
+                    <h2 class="h2__title reveal revealY">Vroom <strong>simplifie</strong> vos déplacements quotidiens</h2>
                     <div class="vertical gap">
-                        <div class="horizontal smallGap explanation__infoContainer">
+                        <div class="horizontal smallGap explanation__infoContainer reveal revealY">
                             <div class="explanation__iconContainer">
                                 <img src="./assets/icon_background.png" alt="">
                                 <i class="fa-solid fa-user explanation__icon center"></i>
@@ -101,7 +114,7 @@
                                 <p class="paragraph">Recherchez parmi des milliers de trajets disponibles chaque jour en France</p>
                             </div>
                         </div>
-                        <div class="horizontal smallGap explanation__infoContainer">
+                        <div class="horizontal smallGap explanation__infoContainer reveal revealY">
                             <div class="explanation__iconContainer">
                                 <img src="./assets/icon_background.png" alt="">
                                 <i class="fa-solid fa-arrow-pointer explanation__icon center"></i>
@@ -111,7 +124,7 @@
                                 <p class="paragraph">Paiement sécurisé et confirmation immédiate pour voyager l'esprit tranquille</p>
                             </div>
                         </div>
-                        <div class="horizontal smallGap explanation__infoContainer">
+                        <div class="horizontal smallGap explanation__infoContainer reveal revealY">
                             <div class="explanation__iconContainer">
                                 <img src="./assets/icon_background.png" alt="">
                                 <i class="fa-solid fa-award explanation__icon center"></i>
@@ -135,8 +148,8 @@
             </div>
         </div>
         <!--#################### -- TRUST -- ####################-->
-        <div class="trustContainer sectionContainer horizontal gap">
-            <div class="horizontal">
+        <div class="trustContainer sectionContainer horizontal gap reveal-group">
+            <div class="horizontal reveal revealY">
                 <div class="vertical trust__startPosition">
                     <div class="horizontal center trust__startPosition">
                         <i class="fa-solid fa-arrow-up"></i>
@@ -149,7 +162,7 @@
                     <img src="./assets/Confiance_illustration1.png" class="trust__illustration" alt="">
                 </div>
             </div>
-            <div class="horizontal">
+            <div class="horizontal reveal revealY">
                 <div>
                     <img src="./assets/Confiance_illustration2.png" class="trust__illustration" alt="">
                 </div>
@@ -162,7 +175,7 @@
                     <p class="trust__paragraph paragraph">Une communauté soudée et en pleine croissance constante</p>
                 </div>
             </div>
-            <div class="horizontal">
+            <div class="horizontal reveal revealY">
                 <div class="vertical trust__startPosition">
                     <div class="horizontal center trust__startPosition">
                         <p class="trust__number">4.5/5</p>
@@ -177,20 +190,20 @@
         </div>
         <!--#################### -- POINT -- ####################-->
         <div id="point">
-            <div class="sectionContainer">
+            <div class="sectionContainer reveal-group">
                 <div class="pointContainer horizontal gap">
                     <div class="vertical gap point__infoContainer">
-                        <h2 class="h2__title point__title">Cumulez des points et profitez d'avantages exclusifs</h2>
-                        <p class="point__paragraph">Chaque kilomètre parcouru vous rapporte des points fidélité à échanger contre des réductions ou des services</p>
-                        <div class="inputContainer">
+                        <h2 class="h2__title point__title reveal revealY">Cumulez des points et profitez d'avantages exclusifs</h2>
+                        <p class="point__paragraph reveal revealY">Chaque kilomètre parcouru vous rapporte des points fidélité à échanger contre des réductions ou des services</p>
+                        <div class="inputContainer reveal revealY">
                             <input type="text" class="inputText" placeholder="Saisissez votre code promo">
                             <button class="button__inputText point__buttonInputText">
                                 <i class="fa-solid fa-magnifying-glass center"></i>
                             </button>
                         </div>
                     </div>
-                    <div class="point__imageContainer center">
-                        <img src="./assets/Points.png" class="point__image" alt="Carte Point">
+                    <div class="point__imageContainer center reveal-group">
+                        <img src="./assets/Points.png" class="point__image reveal revealX" alt="Carte Point">
                     </div>
                 </div>
             </div>
@@ -237,12 +250,11 @@
                 </div>
             </div>
         </div>
-        
         <!--#################### -- REVIEW -- ####################-->
-        <div class="review__background">
+        <div class="review__background reveal-group">
             <div class="reviewContainer vertical center gap">
-                <h2 class="h2__title review__title">Les membres adorent</h2>
-                <div id="reviewContainer" class="horizontal gap review__cardContainer">
+                <h2 class="h2__title review__title reveal revealX">Les membres adorent</h2>
+                <div id="reviewContainer" class="horizontal gap review__cardContainer reveal reveal-X">
                     <!-- data reviews -->
                 </div>
                 <div class="horizontal gap">
@@ -339,9 +351,9 @@
         </div>
         <!--#################### -- FAQ -- ####################-->
         <div id="faq">
-            <div class="faqContainer sectionContainer vertical bigGap">
-                <h2 class="h2__title">Toutes les <strong>réponses</strong> à vos questions juste ici !</h2>
-                <div class="vertical smallGap">
+            <div class="faqContainer sectionContainer vertical bigGap reveal-group">
+                <h2 class="h2__title reveal reveal-X">Toutes les <strong>réponses</strong> à vos questions juste ici !</h2>
+                <div class="vertical smallGap reveal revealY">
                     <div class="faq__elementContainer vertical smallGap">
                         <div class="horizontal faq__questionContainer">
                             <p class="faq__question">Comment créer un compte Vroom ?</p>

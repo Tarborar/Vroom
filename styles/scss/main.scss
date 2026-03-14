@@ -24,7 +24,7 @@
 @import 'pages/error';
 
 html{
-    overflow-x: hidden;
+    overflow-x: clip;
     max-width: 100%;
     scroll-behavior: smooth;
 }
@@ -32,7 +32,7 @@ html{
 body{
     max-width: 100%;
     font-family: "Nunito Sans";
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 [id] {
@@ -172,6 +172,31 @@ strong{
 }
 .paragraphGap{
     gap: 5px;
+}
+
+//Animation
+.reveal{
+    opacity: 0;
+    transition: opacity 0.7s cubic-bezier(.215,.61,.355,1),
+    transform 0.7s cubic-bezier(.215,.61,.355,1);
+    transition-delay: calc(var(--delay) * 0.1s);
+}
+
+.revealX{
+    transform: translateX(40px);
+}
+
+.reveal-X{
+    transform: translateX(-40px);
+}
+
+.revealY{
+    transform: translateY(40px);
+}
+
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0) translateX(0);
 }
 
 @media screen and (max-width: 767px){

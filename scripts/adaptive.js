@@ -1,11 +1,11 @@
 export const homeHTML =`
     <div class="homeContainer sectionContainer vertical">
-        <header class="horizontal header">
+        <header class="horizontal header reveal-group">
             <div>
-                <img src="./assets/Logo.png" class="header__logo" alt="Logo Vroom">
+                <img src="./assets/Logo.png" class="header__logo reveal reveal-X" alt="Logo Vroom">
             </div>
             <nav>
-                <ul id="header__navigation" class="horizontal header__navigation">
+                <ul id="header__navigation" class="horizontal header__navigation reveal reveal-X">
                     <li><a href="#home">Accueil</a></li>
                     <li><a href="#explanation">Avantages</a></li>
                     <li><a href="#mobile">Application</a></li>
@@ -13,27 +13,27 @@ export const homeHTML =`
                     <li><a href="#faq">FAQ</a></li>
                 </ul>
             </nav>
-            <button class="button">Connexion</button>
+            <button class="button reveal reveal-X">Connexion</button>
         </header>
-        <div class="home__elements">
+        <div class="home__elements reveal-group">
             <div class="vertical home__info">
-                <h1 class="h1__title">Covoiturez <strong>simplement</strong> partout en France</h1>
-                <p class="paragraph">Découvrez Vroom, la nouvelle façon de voyager malin. Que ce soit pour un trajet quotidien ou de longues distances, trouvez rapidement un conducteur ou des passager partageant votre destination</p>
-                <div class="inputContainer">
+                <h1 class="h1__title reveal revealY">Covoiturez <strong>simplement</strong> partout en France</h1>
+                <p class="paragraph reveal revealY">Découvrez Vroom, la nouvelle façon de voyager malin. Que ce soit pour un trajet quotidien ou de longues distances, trouvez rapidement un conducteur ou des passager partageant votre destination</p>
+                <div class="inputContainer reveal revealY">
                     <input type="text" class="inputText" placeholder="Où souhaitez-vous aller ?">
                     <button class="button__inputText">
                         <i class="fa-solid fa-magnifying-glass center"></i>
                     </button>
                 </div>
-                <div class="horizontal smallGap home__buttonInfoContainer">
+                <div class="horizontal smallGap home__buttonInfoContainer reveal revealY">
                     <button class="button">Créer un vroom</button>
                     <button class="home__buttonPlay">
                         <i class="fa-solid fa-play center"></i>
                     </button>
                 </div>
             </div>
-            <div>
-                <img src="./assets/Voiture.png" class="home__image" alt="Voiture">
+            <div class="reveal-group">
+                <img src="./assets/Voiture.png" class="home__image reveal revealX" alt="Voiture">
             </div>
         </div>
     </div>
@@ -41,29 +41,29 @@ export const homeHTML =`
 
 export const homeAdaptiveHTML =`
     <div id="homeContainer" class="homeContainer sectionContainer vertical">
-        <header class="horizontal header">
+        <header class="horizontal header reveal-group">
             <div>
-                <img src="./assets/Logo.png" class="header__logo" alt="Logo Vroom">
+                <img src="./assets/Logo.png" class="header__logo reveal reveal-X" alt="Logo Vroom">
             </div>
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars reveal revealX"></i>
         </header>
-        <div class="home__elements">
+        <div class="home__elements reveal-group">
             <div class="vertical home__info">
-                <h1 class="h1__title">Covoiturez <strong>simplement</strong> partout en France</h1>
-                <p class="paragraph">Découvrez Vroom, la nouvelle façon de voyager malin. Que ce soit pour un trajet quotidien ou de longues distances, trouvez rapidement un conducteur ou des passager partageant votre destination</p>
-                <div class="inputContainer">
+                <h1 class="h1__title reveal revealY">Covoiturez <strong>simplement</strong> partout en France</h1>
+                <p class="paragraph reveal revealY">Découvrez Vroom, la nouvelle façon de voyager malin. Que ce soit pour un trajet quotidien ou de longues distances, trouvez rapidement un conducteur ou des passager partageant votre destination</p>
+                <div class="inputContainer reveal revealY">
                     <input type="text" class="inputText" placeholder="Où souhaitez-vous aller ?">
                     <button class="button__inputText">
                         <i class="fa-solid fa-magnifying-glass center"></i>
                     </button>
                 </div>
-                <div>
-                <img src="./assets/Voiture.png" class="home__image" alt="Voiture">
-            </div>
+                <div class="reveal-group">
+                    <img src="./assets/Voiture.png" class="home__image reveal reveal-X" alt="Voiture">
+                </div>
             </div>
             <div class="horizontal smallGap home__buttonInfoContainer">
-                <button class="button">Créer un vroom</button>
-                <button class="home__buttonPlay">
+                <button class="button reveal revealX">Créer un vroom</button>
+                <button class="home__buttonPlay reveal revealX">
                     <i class="fa-solid fa-play center"></i>
                 </button>
             </div>
@@ -72,20 +72,20 @@ export const homeAdaptiveHTML =`
 `;
 
 export const explanationHTML =`
-    <div class="explanationContainer sectionContainer horizontal gap">
+    <div class="explanationContainer sectionContainer horizontal gap reveal-group">
         <div class="explanation__covoiturage">
             <div class="explanation__imageContainer">
-                <img src="./assets/Covoiturage.png"  class="explanation__image" alt="Rencontre covoiturage">
-                <div class="explanation__trustContainer vertical">
+                <img src="./assets/Covoiturage.png"  class="explanation__image reveal reveal-X" alt="Rencontre covoiturage">
+                <div class="explanation__trustContainer vertical reveal reveal-X">
                     <p class="explanation__trustNumber">5k</p>
                     <p class="explanation__trustParagraph">voyageurs heureux</p>
                 </div>
             </div>
         </div>
-        <div class="vertical gap">
-            <h2 class="h2__title">Vroom <strong>simplifie</strong> vos déplacements quotidiens</h2>
-            <div class="vertical gap">
-                <div class="horizontal smallGap explanation__infoContainer">
+        <div class="vertical gap reveal-group">
+            <h2 class="h2__title reveal revealX">Vroom <strong>simplifie</strong> vos déplacements quotidiens</h2>
+            <div class="vertical gap reveal-group">
+                <div class="horizontal smallGap explanation__infoContainer reveal revealY">
                     <div class="explanation__iconContainer">
                         <img src="./assets/icon_background.png" alt="">
                         <i class="fa-solid fa-user explanation__icon center"></i>
@@ -95,7 +95,7 @@ export const explanationHTML =`
                         <p class="paragraph">Recherchez parmi des milliers de trajets disponibles chaque jour en France</p>
                     </div>
                 </div>
-                <div class="horizontal smallGap explanation__infoContainer">
+                <div class="horizontal smallGap explanation__infoContainer reveal revealY">
                     <div class="explanation__iconContainer">
                         <img src="./assets/icon_background.png" alt="">
                         <i class="fa-solid fa-arrow-pointer explanation__icon center"></i>
@@ -105,7 +105,7 @@ export const explanationHTML =`
                         <p class="paragraph">Paiement sécurisé et confirmation immédiate pour voyager l'esprit tranquille</p>
                     </div>
                 </div>
-                <div class="horizontal smallGap explanation__infoContainer">
+                <div class="horizontal smallGap explanation__infoContainer reveal revealY">
                     <div class="explanation__iconContainer">
                         <img src="./assets/icon_background.png" alt="">
                         <i class="fa-solid fa-award explanation__icon center"></i>
@@ -121,10 +121,10 @@ export const explanationHTML =`
 `
 
 export const explanationAdaptiveHTML =`
-    <div id="explanationContainer" class="explanationContainer sectionContainer horizontal gap">
+    <div id="explanationContainer" class="explanationContainer sectionContainer horizontal gap reveal-group">
         <div class="vertical gap">
-            <h2 class="h2__title">Vroom <strong>simplifie</strong> vos déplacements quotidiens</h2>
-            <div class="explanation__covoiturage">
+            <h2 class="h2__title reveal revealY">Vroom <strong>simplifie</strong> vos déplacements quotidiens</h2>
+            <div class="explanation__covoiturage reveal revealY">
                 <div class="explanation__imageContainer">
                     <img src="./assets/Covoiturage.png"  class="explanation__image" alt="Rencontre covoiturage">
                     <div class="explanation__trustContainer vertical">
@@ -134,7 +134,7 @@ export const explanationAdaptiveHTML =`
                 </div>
             </div>
             <div class="vertical gap explanation__infoContainer">
-                <div class="horizontal smallGap explanation__elementContainer">
+                <div class="horizontal smallGap explanation__elementContainer reveal revealY">
                     <div class="explanation__iconContainer">
                         <img src="./assets/icon_background.png" alt="">
                         <i class="fa-solid fa-user explanation__icon center"></i>
@@ -144,7 +144,7 @@ export const explanationAdaptiveHTML =`
                         <p class="paragraph">Recherchez parmi des milliers de trajets disponibles chaque jour en France</p>
                     </div>
                 </div>
-                <div class="horizontal smallGap explanation__elementContainer">
+                <div class="horizontal smallGap explanation__elementContainer reveal revealY">
                     <div class="explanation__iconContainer">
                         <img src="./assets/icon_background.png" alt="">
                         <i class="fa-solid fa-arrow-pointer explanation__icon center"></i>
@@ -154,7 +154,7 @@ export const explanationAdaptiveHTML =`
                         <p class="paragraph">Paiement sécurisé et confirmation immédiate pour voyager l'esprit tranquille</p>
                     </div>
                 </div>
-                <div class="horizontal smallGap explanation__elementContainer">
+                <div class="horizontal smallGap explanation__elementContainer reveal revealY">
                     <div class="explanation__iconContainer">
                         <img src="./assets/icon_background.png" alt="">
                         <i class="fa-solid fa-award explanation__icon center"></i>
@@ -170,7 +170,7 @@ export const explanationAdaptiveHTML =`
 `;
 
 export const pointHTML=`
-    <div class="sectionContainer">
+    <div class="sectionContainer reveal-group reveal revealX">
         <div class="pointContainer horizontal gap">
             <div class="vertical gap point__infoContainer">
                 <h2 class="h2__title point__title">Cumulez des points et profitez d'avantages exclusifs</h2>
@@ -190,16 +190,16 @@ export const pointHTML=`
 `
 
 export const pointAdaptiveHTML =`
-    <div class="sectionContainer">
+    <div class="sectionContainer reveal-group reveal">
         <div class="pointContainer horizontal gap">
             <div class="vertical gap point__infoContainer">
-                <h2 class="h2__title point__title">Cumulez des points et profitez d'avantages exclusifs</h2>
-                <p class="point__paragraph">Chaque kilomètre parcouru vous rapporte des points fidélité à échanger contre des réductions ou des services</p>
+                <h2 class="h2__title point__title reveal revealY">Cumulez des points et profitez d'avantages exclusifs</h2>
+                <p class="point__paragraph reveal revealY">Chaque kilomètre parcouru vous rapporte des points fidélité à échanger contre des réductions ou des services</p>
                 <div class="point__imageContainer center">
-                    <img src="./assets/Points.png" class="point__image" alt="Carte Point">
+                    <img src="./assets/Points.png" class="point__image reveal revealY" alt="Carte Point">
                 </div>
             </div>
-            <div class="inputContainer">
+            <div class="inputContainer reveal revealX">
                 <input type="text" class="inputText" placeholder="Saisissez votre code promo">
                 <button class="button__inputText point__buttonInputText">
                     <i class="fa-solid fa-magnifying-glass center"></i>
@@ -210,8 +210,8 @@ export const pointAdaptiveHTML =`
 `;
 
 export const mobileHTML=`
-    <div class="mobileContainer sectionContainer horizontal gap">
-        <div class="vertical gap mobile__infoContainer">
+    <div class="mobileContainer sectionContainer horizontal gap reveal-group">
+        <div class="vertical gap mobile__infoContainer reveal reveal-X">
             <h2 class="h2__title">L'expérience Vroom <strong>mobile</strong></h2>
             <button class="mobile__infoButton">Ouvrir l'application</button>
             <div class="horizontal smallGap">
@@ -225,7 +225,7 @@ export const mobileHTML=`
             </div>
         </div>
         <div class="smallGap mobile__cardContainer">
-            <div class="vertical mobile__card smallGap">
+            <div class="vertical mobile__card smallGap reveal reveal-X">
                 <h4 class="h4__title mobile__cardTitle">Pour IOS</h4>
                 <p class="paragraph">Téléchargez Vroom sur l'App Store et commencez à voyager</p>
                 <button class="button">Téléchargez</button>
@@ -236,7 +236,7 @@ export const mobileHTML=`
                     </div>
                 </div>
             </div>
-            <div class="vertical mobile__card smallGap">
+            <div class="vertical mobile__card smallGap reveal reveal-X">
                 <h4 class="h4__title mobile__cardTitle">Pour Android</h4>
                 <p class="paragraph">Disponible sur Google Play, installez l'application Vroom</p>
                 <button class="button">Téléchargez</button>
@@ -252,10 +252,10 @@ export const mobileHTML=`
 `
 
 export const mobileAdaptiveHTML =`
-    <div class="mobileContainer sectionContainer vertical gap">
+    <div class="mobileContainer sectionContainer vertical gap reveal-group">
         <div class="vertical gap mobile__infoContainer">
-            <h2 class="h2__title">L'expérience Vroom <strong>mobile</strong></h2>
-                <div class="smallGap mobile__cardContainer">
+            <h2 class="h2__title reveal revealY">L'expérience Vroom <strong>mobile</strong></h2>
+                <div class="smallGap mobile__cardContainer reveal reveal-X">
                     <div class="vertical mobile__card smallGap">
                         <h4 class="h4__title mobile__cardTitle">Pour IOS</h4>
                         <p class="paragraph">Téléchargez Vroom sur l'App Store et commencez à voyager</p>
@@ -269,7 +269,7 @@ export const mobileAdaptiveHTML =`
                             </div>
                         </div>
                     </div>
-                    <div class="vertical mobile__card smallGap">
+                    <div class="vertical mobile__card smallGap reveal reveal-X">
                         <h4 class="h4__title mobile__cardTitle">Pour Android</h4>
                         <p class="paragraph">Disponible sur Google Play, installez l'application Vroom</p>
                         <button class="button">Téléchargez</button>
@@ -283,7 +283,7 @@ export const mobileAdaptiveHTML =`
                         </div>
                     </div>
                 </div>
-                <div class="vertical smallGap center mobile__logo">
+                <div class="vertical smallGap center mobile__logo reveal-group reveal revealY">
                     <div>
                         <img src="./assets/Logo_mobile.png" class="logoApplication" alt="">
                     </div>
@@ -292,24 +292,24 @@ export const mobileAdaptiveHTML =`
                         <p class="paragraph">Réservez, gérez et payez vos trajets directement depuis votre mobile</p>
                     </div>
                 </div>
-            <button class="mobile__infoButton center">Ouvrir l'application</button>
+            <button class="mobile__infoButton center reveal revealY">Ouvrir l'application</button>
         </div>
     </div>
 `;
 
 export const magHTML=`
-    <div class="magContainer sectionContainer vertical gap">
+    <div class="magContainer sectionContainer vertical gap reveal-group">
         <div class="horizontal mag__header">
-            <h2 class="h2__title">Le <strong>mag'</strong> Vroom</h2>
-            <div class="mag__buttonContainer">
+            <h2 class="h2__title reveal revealY">Le <strong>mag'</strong> Vroom</h2>
+            <div class="mag__buttonContainer reveal revealX">
                 <button type="text" class="mag__button">Voir les nouveautés</button>
                 <button class="mag__buttonIcon">
                     <i class="fa-solid fa-arrow-right mag__fa-arrow-right center"></i>
                 </button>
             </div>
         </div>
-        <div class="horizontal mag__blogContainer gap">
-            <div class="vertical mag__blogElement">
+        <div class="horizontal mag__blogContainer gap reveal-group">
+            <div class="vertical mag__blogElement reveal reveal-X">
                 <div class="mag__imageContainer">
                     <img src="./assets/Ville1.png" class="mag__image" alt="">
                 </div>
@@ -320,7 +320,7 @@ export const magHTML=`
                 <p class="paragraph mag__blogParagraph">Envie de déconnecter le temps d'un week-end ? Découvrez nos 5 destinations coup de coeur...</p>
                 <p class="mag__blogMore">lire plus</p>
             </div>
-            <div class="vertical mag__blogElement">
+            <div class="vertical mag__blogElement reveal reveal-X">
                 <div class="mag_imageContainer">
                     <img src="./assets/Ville2.png" class="mag__image" alt="">
                 </div>
@@ -332,7 +332,7 @@ export const magHTML=`
                 <p class="paragraph mag__blogParagraph">Le covoiturage est l'un des moyens de transport les plus vertueux. Voici comment optimiser...</p>
                 <p class="mag__blogMore">lire plus</p>
             </div>
-            <div class="vertical mag__blogElement">
+            <div class="vertical mag__blogElement reveal reveal-X">
                 <div class="mag__imageContainer">
                     <img src="./assets/Ville3.png" class="mag__image" alt="">
                 </div>
@@ -348,10 +348,10 @@ export const magHTML=`
 `
 
 export const magAdaptiveHTML =`
-    <div class="magContainer sectionContainer vertical gap">
-        <h2 class="h2__title">Le <strong>mag'</strong> Vroom</h2>
+    <div class="magContainer sectionContainer vertical gap reveal-group">
+        <h2 class="h2__title reveal revealY">Le <strong>mag'</strong> Vroom</h2>
         <div class="vertical mag__blogContainer smallGap">
-            <div class="horizontal mag__blogElement smallGap">
+            <div class="horizontal mag__blogElement smallGap reveal revealY">
                 <div class="mag__imageContainer">
                     <img src="./assets/Ville1.png" class="mag__image" alt="">
                 </div>
@@ -363,7 +363,7 @@ export const magAdaptiveHTML =`
                     <p class="paragraph mag__blogParagraph">Envie de déconnecter le temps d'un week-end ? Découvrez nos 5 destinations coup de coeur...</p>
                 </div>
             </div>
-            <div class="horizontal mag__blogElement smallGap">
+            <div class="horizontal mag__blogElement smallGap reveal revealY">
                 <div class="mag__imageContainer">
                     <img src="./assets/Ville2.png" class="mag__image" alt="">
                 </div>
@@ -376,7 +376,7 @@ export const magAdaptiveHTML =`
                     <p class="paragraph mag__blogParagraph">Le covoiturage est l'un des moyens de transport les plus vertueux. Voici comment optimiser...</p>
                 </div>
             </div>
-            <div class="horizontal mag__blogElement smallGap">
+            <div class="horizontal mag__blogElement smallGap reveal revealY">
                 <div class="mag__imageContainer">
                     <img src="./assets/Ville3.png" class="mag__image" alt="">
                 </div>
@@ -389,7 +389,7 @@ export const magAdaptiveHTML =`
                 </div>
             </div>
         </div>
-        <div class="mag__buttonContainer">
+        <div class="mag__buttonContainer reveal-group reveal revealX">
             <button type="text" class="mag__button">Voir toutes les nouveautés</button>
             <button class="mag__buttonIcon">
                 <i class="fa-solid fa-arrow-right mag__fa-arrow-right center"></i>
@@ -399,10 +399,10 @@ export const magAdaptiveHTML =`
 `;
 
 export const magAdaptiveMobileHTML = `
-    <div id="magContainer" class="magContainer sectionContainer vertical gap">
-        <h2 class="h2__title">Le <strong>mag'</strong> Vroom</h2>
+    <div id="magContainer" class="magContainer sectionContainer vertical gap reveal-group">
+        <h2 class="h2__title reveal revealY">Le <strong>mag'</strong> Vroom</h2>
         <div class="vertical mag__blogContainer gap">
-            <div class="vertical mag__blogElement">
+            <div class="vertical mag__blogElement reveal revealY">
                 <div class="mag__imageContainer">
                     <img src="./assets/Ville1.png" class="mag__image" alt="">
                 </div>
@@ -413,7 +413,7 @@ export const magAdaptiveMobileHTML = `
                 <p class="paragraph mag__blogParagraph">Envie de déconnecter le temps d'un week-end ? Découvrez nos 5 destinations coup de coeur...</p>
                 <p class="mag__blogMore">lire plus</p>
             </div>
-            <div class="vertical mag__blogElement">
+            <div class="vertical mag__blogElement reveal revealY">
                 <div class="mag_imageContainer">
                     <img src="./assets/Ville2.png" class="mag__image" alt="">
                 </div>
@@ -425,7 +425,7 @@ export const magAdaptiveMobileHTML = `
                 <p class="paragraph mag__blogParagraph">Le covoiturage est l'un des moyens de transport les plus vertueux. Voici comment optimiser...</p>
                 <p class="mag__blogMore">lire plus</p>
             </div>
-            <div class="vertical mag__blogElement">
+            <div class="vertical mag__blogElement reveal revealY">
                 <div class="mag__imageContainer">
                     <img src="./assets/Ville3.png" class="mag__image" alt="">
                 </div>
@@ -437,7 +437,7 @@ export const magAdaptiveMobileHTML = `
                 <p class="mag__blogMore">lire plus</p>
             </div>
         </div>
-        <div class="mag__buttonContainer">
+        <div class="mag__buttonContainer reveal-group reveal reveal-X">
             <button type="text" class="mag__button">Voir les nouveautés</button>
             <button class="mag__buttonIcon">
                 <i class="fa-solid fa-arrow-right mag__fa-arrow-right center"></i>
@@ -447,7 +447,7 @@ export const magAdaptiveMobileHTML = `
 `;
 
 export const newsletterHTML=`
-    <div class="sectionContainer">
+    <div class="sectionContainer reveal-group reveal revealX">
         <div class="newsletter__background newsletterContainer horizontal">
             <div class="vertical gap newsletter__infoContainer">
                 <h2 class="h2__title">Inscrivez-vous pour recevoir la <strong>newsletter</strong></h2>
@@ -478,11 +478,11 @@ export const newsletterHTML=`
 `
 
 export const newsletterAdaptiveHTML =`
-    <div class="sectionContainer">
+    <div class="sectionContainer reveal-group">
         <div class="newsletter__background newsletterContainer vertical center">
             <div class="vertical gap newsletter__infoContainer">
-                <h2 class="h2__title">Inscrivez-vous pour recevoir la <strong>newsletter</strong></h2>
-                <div class="vertical smallGap">
+                <h2 class="h2__title reveal revealY">Inscrivez-vous pour recevoir la <strong>newsletter</strong></h2>
+                <div class="vertical smallGap reveal revealY">
                     <div>
                         <img src="./assets/Logo_mobile.png" class="logoApplication" alt="">
                     </div>
@@ -491,49 +491,49 @@ export const newsletterAdaptiveHTML =`
                         <p class="paragraph">Recevez nos bons plans et actus en avant-première</p>
                     </div>
                 </div>
-                <div>
+                <div class="reveal revealY">
                     <img src="./assets/Dessin_voiture.png" alt="Voiture dessin">
                 </div>
             </div>
             <div class="vertical smallGap newsletter__formContainer">
-                <div class="inputContainer">
+                <div class="inputContainer reveal revealY">
                     <input type="text" class="newsletter__inputText" placeholder="votre adresse mail">
                     <button class="newsletter__buttonInputText">
                         <i class="fa-solid fa-arrow-right newsletter__fa-arrow-right center"></i>
                     </button>
                 </div>
-                <button class="button newsletter__button">Rejoindre</button>
+                <button class="button newsletter__button reveal revealY">Rejoindre</button>
             </div>
         </div>
     </div>
 `;
 
 export const newsletterAdaptiveMobileHTML = `
-    <div class="sectionContainer">
+    <div class="sectionContainer reveal-group">
         <div class="newsletter__background newsletterContainer vertical center">
             <div class="vertical smallGap newsletter__infoContainer">
-                <h2 class="h2__title">Inscrivez-vous pour recevoir la <strong>newsletter</strong></h2>
+                <h2 class="h2__title reveal revealY">Inscrivez-vous pour recevoir la <strong>newsletter</strong></h2>
                 <div class="vertical smallGap">
                     <div>
-                        <img src="./assets/Logo_mobile.png" class="logoApplication" alt="">
+                        <img src="./assets/Logo_mobile.png" class="logoApplication reveal revealY" alt="">
                     </div>
-                    <div class="vertical paragraphGap">
+                    <div class="vertical paragraphGap reveal revealY">
                         <h3 class="h3__title">Restez toujours informés</h3>
                         <p class="paragraph">Recevez nos bons plans et actus en avant-première</p>
                     </div>
                 </div>
                 <div>
-                    <img src="./assets/Dessin_voiture.png" class="newsletter__dessin" alt="Voiture dessin">
+                    <img src="./assets/Dessin_voiture.png" class="newsletter__dessin reveal revealY" alt="Voiture dessin">
                 </div>
             </div>
             <div class="vertical smallGap newsletter__formContainer">
-                <div class="inputContainer">
+                <div class="inputContainer reveal reveal-X">
                     <input type="text" class="newsletter__inputText" placeholder="votre adresse mail">
                     <button class="newsletter__buttonInputText">
                         <i class="fa-solid fa-arrow-right newsletter__fa-arrow-right center"></i>
                     </button>
                 </div>
-                <button class="button newsletter__button">Rejoindre</button>
+                <button class="button newsletter__button reveal revealX">Rejoindre</button>
             </div>
         </div>
     </div>

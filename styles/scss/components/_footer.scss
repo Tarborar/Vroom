@@ -9,8 +9,12 @@ footer{
     width: 100%;
 }
 
+.footerContainer>*{
+    flex: 1;
+}
+
 .footer__newsletterContainer{
-    flex: 2 !important;
+    flex: 3 !important;
 }
 
 .footer__titleNavigation{
